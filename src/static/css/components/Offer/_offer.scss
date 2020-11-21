@@ -1,0 +1,154 @@
+.program{
+    position: relative;
+    overflow: hidden;
+    &__img{
+        position: absolute;
+        z-index: -1;
+        left: 0%;
+
+        width:100%
+    }
+}
+.offer{
+
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+
+
+    @include respond(tab-port) { // width < 900?
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__detail
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include respond(tab-port) { // width < 900?
+            flex-direction: row;
+        }
+
+        &__tab{
+
+
+            border-top: solid #f4e22c .15rem;
+            border-right: solid #f4e22c .1rem;
+            margin: 0;
+            border-bottom: solid #f4e22c .5rem;
+            padding-right: .3rem;
+            width: 18rem;
+            margin-top: 1rem;
+            align-items: flex-start;
+            justify-content: flex-start;
+            @include respond(tab-port) { // width < 900?
+               margin-left: 1rem;
+               width: 12rem;
+               flex-wrap: wrap;
+            }
+            h3{
+               margin: 0;
+                align-self: flex-start;
+                text-align: start;
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin-left: 1.75rem;
+                margin-top: 0.5rem;
+
+                color: #f4e22c ;
+                  @include respond(tab-port) { // width < 900?
+                    font-weight: 300;
+                    font-size: 1rem;
+                    margin-left: 1rem;
+                    margin-top: 0.5rem;
+                }
+
+            }
+            p{
+                margin: 0;
+                align-self: flex-start;
+
+                text-align: start;
+                font-size: 1rem;
+                margin-left: 1.75rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                @include respond(tab-port) { // width < 900?
+                    font-size: 0.5rem;
+                    margin-left: 1rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+
+                }
+
+            }
+            &__button {
+                text-align: left;
+                background: transparent;
+                margin: 0;
+                margin-left: 1.75rem;
+
+                margin-bottom: 0.5rem;
+
+                &--text {
+
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                }
+                &--img {
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                @include respond(tab-port) { // width < 900?
+                    font-size: 0.5rem;
+                    margin-left: 0.2rem;
+                    margin-top: 1rem;
+                    margin-bottom: .5rem;
+
+                }
+            }
+
+        }
+
+    }
+    &__content{
+
+        h3{
+            margin: 0;
+             align-self: flex-start;
+             text-align: start;
+
+             font-weight: 500;
+             font-size: 3rem;
+             margin-left: 3rem;
+             margin-top: 1rem;
+
+             color: #121111 ;
+
+         }
+         p{
+            margin: 0;
+            align-self: flex-start;
+            text-align: start;
+            font-size: 1rem;
+            margin-left: 3rem;
+            margin-top: 0.5rem;
+            padding-left: .5rem;
+            padding-right: 2rem;
+
+            margin-bottom: 1.75rem;
+
+        }
+    }
+
+
+}
