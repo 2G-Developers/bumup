@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from './../components/Carousel/Carousel'
 import Offer from './../components/Offer/offer'
+import About from './../components/About/About'
 
 
 import HomeBanner from './../static/img/Home-Banner.png'
@@ -14,6 +15,7 @@ function Home() {
                 mummas (and daddies) simply enjoy their experience of pregnancy and stay healthy, fit and sorted to 
                 make the best of their bump(y) times. " />
             <Offer />
+            <About />
     </div>
   );
 }

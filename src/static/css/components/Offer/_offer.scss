@@ -10,7 +10,7 @@
     }
 }
 .offer{
-
+    
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -47,8 +47,9 @@
             align-items: flex-start;
             justify-content: flex-start;
             @include respond(tab-port) { // width < 900?
-               margin-left: 1rem;
+               margin-left: 0.5rem;
                width: 12rem;
+
                flex-wrap: wrap;
             }
             h3{
@@ -148,6 +149,26 @@
             margin-bottom: 1.75rem;
 
         }
+        @include respond(tab-port) {
+            h3{                
+                margin: 0;
+                font-size: 2.2rem;
+                font-weight: 300;
+                padding: .10rem;
+                padding-bottom: 0.5rem;
+                
+            }
+            p{
+                margin: 0;
+                text-align: left;
+                font-size: 0.75rem;
+                font-weight: 100;
+                padding: .10rem;
+                padding-bottom: 0.3rem;
+        
+            }
+        }
+        
     }
 
 
