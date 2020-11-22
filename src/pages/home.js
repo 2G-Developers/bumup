@@ -6,6 +6,9 @@ import About from './../components/About/About'
 
 import HomeBanner from './../static/img/Home-Banner.png'
 import HomeMobile from './../static/img/Mobile-Banner.png'
+import Founder from '../components/Founder/Founder'
+import Contact from '../components/Contact/Contact'
+import Footer from '../components/Footer/Footer'
 
 function Home() {
   return (
@@ -16,6 +19,9 @@ function Home() {
                 make the best of their bump(y) times. " />
             <Offer />
             <About />
+            <Founder />
+            <Contact />
+            <Footer />
     </div>
   );
 }

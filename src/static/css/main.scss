@@ -1,9 +1,14 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
+@import './base/base';
+@import './base/layout';
 
 @import './components/Carousel/carousel';
 @import './components/Offer/offer';
 @import './components/About/about';
+@import './components/Founder/founder';
+@import './components/Contact/Contact.scss';
+@import './components/Footer/footer';
 
 
 

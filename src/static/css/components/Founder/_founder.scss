@@ -1,0 +1,65 @@
+.founder {
+    margin: 5rem 0;
+
+    &__img {
+        @media (min-width: 768px) {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__content {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media (min-width: 768px) {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+    }
+
+    &__picture {
+        width: 350px;
+        height: 350px;
+        margin-top: 1rem;
+        position: relative;
+        background: #b7c7cd;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @include respond(tab-port) { // width < 900?
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    &__signature {
+        margin-top: 1.5rem;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 1rem;
+
+        &--signature {
+            margin-bottom: 0;
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-family: 'Hearth Stone', sans-serif;
+        }
+    }
+
+    &__tag {
+        width: 100%;
+        height: auto;
+        // border-radius: 50%;
+    }
+}

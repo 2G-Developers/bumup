@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../../static/img/mantra_image.jpg'
+// import AboutImage from '../../static/img/mantra_image.jpg'
 
 function About(){
     return(
@@ -16,7 +16,7 @@ function About(){
             <p>Our mantra--strong, happy mummas (and daddies) = strong, happy babies.</p>
             <p>So come along, and let's help you prepare for this exciting journey ahead!</p>
 
-            <img src={AboutImage} alt='programimg' class="program__img"></img>
+            {/* <img src={AboutImage} alt='programimg' class="program__img"></img>
             <div className="about__mantra">
                 <h3>
                     Our Mantra
@@ -24,7 +24,7 @@ function About(){
                 <p>
                 strong, happy mummas (and daddies) = strong, happy babies
                 </p>
-            </div>
+            </div> */}
 
 
         </div>
