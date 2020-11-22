@@ -1,6 +1,7 @@
 .program{
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+    // height :913px;
     &__img{
         position: absolute;
         z-index: -1;

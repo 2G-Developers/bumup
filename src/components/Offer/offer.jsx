@@ -1,6 +1,8 @@
 import React , {useState} from 'react'
 import ArrowRightCircle from '../../static/img/arrow-right-circle.svg'
 import ProgramImage from '../../static/img/Program _BG_Image.jpg'
+import ProgramImageMobile from '../../static/img/Program _BG_Image_Mobile.jpg'
+
 function Mycard({header='Header',content='A sample test that goes',func=()=>{}}){
     return(
         <div className="offer__detail__tab" >
@@ -37,7 +39,9 @@ function Offer(){
     }
     return(
         <div className="program">
-            <img src={ProgramImage} alt='programimg' class="program__img"></img>
+            <img src={ProgramImage} alt='programimg' class="program__img desktop"></img>
+            <img src={ProgramImageMobile} alt='programimg' class="program__img mobile"></img>
+
         <div className="offer">
             <div className="offer__detail">
                 <Mycard header='Baby-ready' content='A pre-conception workshop' func={setBabyready} />

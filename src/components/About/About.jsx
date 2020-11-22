@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutImage from '../../static/img/mantra_image.jpg'
 
 function About(){
     return(
@@ -14,6 +15,16 @@ function About(){
             <p>At Bump Up, we understand just how important it is to focus on your well-being while navigating the changes in your body and environment. We are here to help put all those myths and doubts--valid or crazy ones--to rest.</p>
             <p>Our mantra--strong, happy mummas (and daddies) = strong, happy babies.</p>
             <p>So come along, and let's help you prepare for this exciting journey ahead!</p>
+
+            <img src={AboutImage} alt='programimg' class="program__img"></img>
+            <div className="about__mantra">
+                <h3>
+                    Our Mantra
+                </h3>
+                <p>
+                strong, happy mummas (and daddies) = strong, happy babies
+                </p>
+            </div>
 
 
         </div>
