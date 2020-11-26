@@ -26,17 +26,16 @@
     }
 
     &__picture {
-        width: 350px;
-        height: 350px;
+        // width: 350px;
+        // height: 350px;
         margin-top: 1rem;
         position: relative;
-        background: #b7c7cd;
-        overflow: hidden;
-        border-radius: 50%;
+        // overflow: hidden;
+        // border-radius: 50%;
 
         @include respond(tab-port) { // width < 900?
             width: 200px;
-            height: 200px;
+            // height: 200px;
         }
     }
 
@@ -58,7 +57,7 @@
     }
 
     &__tag {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         // border-radius: 50%;
     }

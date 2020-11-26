@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../static/img/women.png'
+import photo from '../../static/img/Kavya.png'
 
 const Founder = () => {
     return (
