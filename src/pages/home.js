@@ -9,6 +9,7 @@ import HomeMobile from './../static/img/Mobile-Banner.png'
 import Founder from '../components/Founder/Founder'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
+import Mantra from '../components/Mantra/Mantra'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
                 make the best of their bump(y) times. " />
             <Offer />
             <About />
+            <Mantra />
             <Founder />
             <Contact />
             <Footer />
