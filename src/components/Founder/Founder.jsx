@@ -8,7 +8,7 @@ const Founder = () => {
                 <div className="row">
                     <div className="founder__img">
                         <div className="founder__picture">
-                            <img src={photo} class="founder__tag" alt="author"/>
+                            <img src={photo} className="founder__tag" alt="author"/>
                         </div>
                     </div>
                     <div className="founder__content">

@@ -1,65 +1,36 @@
 .about{
-    padding: 0rem;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    h3{
+    position: relative;
+    margin: 5rem 0;
+    
+    &__text {
+        margin-bottom: 2rem;
+        color: #121111;
+        font-size: 1.2rem;
         text-align: left;
-        font-size: 4rem;
-        font-weight: 300;
-        padding-bottom: 0.2rem;
+        z-index: 10;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    p{
-        text-align: left;
-        font-size: 1.5rem;
-        font-weight: 100;
-        padding-bottom: 0.2rem;
 
+    &__header {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    &__img{
+
+    &__img {
         position: absolute;
-        z-index: -1;
-        left: 0%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .3;
+        width: 100%;
 
-        width:100%
-    }
-    @include respond(tab-port) {
-        h3{
-            text-align: left;
-            font-size: 2.2rem;
-            font-weight: 300;
-            padding-bottom: 0.2rem;
-        }
-        p{
-            text-align: left;
-            font-size: 0.75rem;
-            font-weight: 100;
-            padding-bottom: 0.2rem;
-    
-        }
-
-    }
-    &__mantra{
-        margin:0;
-
-        h3{
-            text-align: center;
-            font-size: 4rem;
-            padding:0px;
-            margin-bottom:0;
-
-            font-weight: 500;
-            padding-bottom: 0rem;
-        }
-        p{
-            text-align: center;
-            padding-top : 2rem;
-            margin:0;
-
-            font-size: 1.5rem;
-            font-weight: 300;
-            padding-bottom: 0.2rem;
-    
+        @media (min-width: 992px) {
+            width: 40%;
         }
     }
 }

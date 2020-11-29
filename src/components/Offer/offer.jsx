@@ -39,8 +39,8 @@ function Offer(){
     }
     return(
         <div className="program">
-            <img src={ProgramImage} alt='programimg' class="program__img desktop"></img>
-            <img src={ProgramImageMobile} alt='programimg' class="program__img mobile"></img>
+            <img src={ProgramImage} alt='programimg' className="program__img desktop"></img>
+            <img src={ProgramImageMobile} alt='programimg' className="program__img mobile"></img>
 
         <div className="offer">
             <div className="offer__detail">
