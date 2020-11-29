@@ -24,10 +24,11 @@
 
         h3 {
             color: #f4e22c;
-            font:Poppins;
-            font-size: 3.5rem;
+            font-family: 'Hearth Stone', sans-serif;
+            font-size: 4rem;
             margin-bottom: 0;
             font-weight: 300;
+            letter-spacing: 5px;
             font-style: italic;
 
             @include respond(tab-port) {

@@ -10,10 +10,12 @@ import Founder from '../components/Founder/Founder'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Mantra from '../components/Mantra/Mantra'
+import Navbar from '../components/Navbar/Navbar'
 
 function Home() {
   return (
     <div className="App">
+            <Navbar />
             <Carousel images={HomeBanner} altText="Hero" 
                 imagesMobile={HomeMobile} heading="Strong,happy mummas" subheading="At Bump up, we believe that every pregnancy should be a happy pregnancy! We offer programs to help 
                 mummas (and daddies) simply enjoy their experience of pregnancy and stay healthy, fit and sorted to 
