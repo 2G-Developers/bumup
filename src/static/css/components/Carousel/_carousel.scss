@@ -23,10 +23,13 @@
         }
 
         h3 {
-            color: #fff;
+            color: #f4e22c;
+            font:Poppins;
             font-size: 3.5rem;
             margin-bottom: 0;
-            
+            font-weight: 300;
+            font-style: italic;
+
             @include respond(tab-port) {
                 font-size: 1.5rem;
             }
@@ -34,10 +37,12 @@
 
         p {
             color: #fff;
-            font-size: 1.875rem;
+            font-size: 1.25rem;
             margin-bottom: 0;
-            padding-left:4.5rem;
-            padding-right:4.5rem;
+            margin-top: 2rem;
+
+            padding-left:5rem;
+            padding-right:5rem;
 
             font-weight: 200;
             @include respond(tab-port) {

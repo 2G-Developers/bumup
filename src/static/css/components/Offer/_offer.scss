@@ -10,6 +10,7 @@
         width:100%
     }
 }
+
 .offer{
     
     margin-top: 5%;
@@ -123,6 +124,8 @@
 
     }
     &__content{
+        overflow-y: auto;
+        height: 36rem;
 
         h3{
             margin: 0;
