@@ -7,7 +7,8 @@ const Navbar = () => {
         justifyContent: "flex-start",
         width: "100%",
         position: "absolute",
-        top: "0"
+        top: "10px",
+        left: "10px"
     }
 
     const topNavbar = {

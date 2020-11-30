@@ -12,6 +12,11 @@
     //     }
     // }
 
+    &__img {
+        display: flex;
+        justify-content: center;
+    }
+
     &__caption {
         position: absolute;
         top: 30%;
@@ -25,11 +30,11 @@
         h3 {
             color: #f4e22c;
             font-family: 'Hearth Stone', sans-serif;
-            font-size: 4rem;
+            font-size: 6.25rem;
             margin-bottom: 0;
             font-weight: 300;
-            letter-spacing: 5px;
-            font-style: italic;
+            // letter-spacing: 5px;
+            // font-style: italic;
 
             @include respond(tab-port) {
                 font-size: 1.5rem;
@@ -40,12 +45,12 @@
             color: #fff;
             font-size: 1.25rem;
             margin-bottom: 0;
-            margin-top: 2rem;
+            margin-top: 0;
 
             padding-left:5rem;
             padding-right:5rem;
 
-            font-weight: 200;
+            font-weight: normal;
             @include respond(tab-port) {
                 font-size: 1rem;
                 padding-left:1.5rem;

@@ -193,15 +193,16 @@
     &__card {
         text-align: left;
         border: 2px solid #f4e22c;
-        border-left: none;
+        border-bottom: 7px solid #f4e22c;
+        // border-left: none;
         margin-bottom: 1rem;
         padding: 1rem 2rem;
-        border-radius: 5px;
+        border-radius: 6px;
 
         &-header {
             color: #f4e22c;
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 1.875rem;
             // margin-bottom: 1rem;
         }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
-import ArrowRightCircle from '../../static/img/arrow-right-circle.svg'
+import ArrowRightCircle from '../../static/img/send.svg'
 import Phone from '../../static/img/phone.svg'
 import Mail from '../../static/img/mail.svg'
 

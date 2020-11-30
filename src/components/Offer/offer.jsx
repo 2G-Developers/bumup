@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import ArrowRightCircle from '../../static/img/arrow-right-circle.svg'
+import ArrowRightCircle from '../../static/img/enter.svg'
 // import ProgramImage from '../../static/img/Program.jpg'
 
 // import ProgramImageMobile from '../../static/img/Program _BG_Image_Mobile.jpg'

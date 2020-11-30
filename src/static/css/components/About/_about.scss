@@ -26,11 +26,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: .3;
+        opacity: .2;
         width: 100%;
 
         @media (min-width: 992px) {
-            width: 40%;
+            width: 30%;
         }
     }
 }
