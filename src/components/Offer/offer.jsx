@@ -11,10 +11,6 @@ const Offer = () => {
     ]
 
     const [contents, setContents] = useState(defaultContent)
-    // const [baby, setBaby] = useState(false)
-    // const [mumma, setMumma] = useState(false)
-    // const [labor, setLabor] = useState(false)
-    // const [bounce, setBounce] = useState(false)
 
     const offerContentList = [
         {
@@ -24,7 +20,7 @@ const Offer = () => {
             cardBody: "A pre-conception workshop",
             paragraph: [
                 "So you are talking about planning for a baby, that’s a huge step! Now, other than tossing your birth control, what do you have to do? How do you know when you are ovulating? Can you go on that trip you’ve been planning? What about spa and salon sessions, are they out of bounds? Will you miss your usual glass of wine over the weekend? Is the weighing scale showing a ‘baby-friendly’ number? Is there really a right ‘position’? Does the dad-to-be have things to watch out for?",
-                "Plenty of questions, right? In this couple’s workshop we&#39;ll be discussing all this and more*!",
+                "Plenty of questions, right? In this couple’s workshop we'll be discussing all this and more*!",
                 "*everything non-clinical, of course."
             ]
         },
@@ -34,9 +30,9 @@ const Offer = () => {
             isOpen: false,
             cardBody: "A pre-conception workshop",
             paragraph: [
-                "A fit mom is a happy mom. Plain and simple. Our prenatal fitness program is designed to help our mummas build strength and well-being into their everyday routines. These regular, twice-a-week sessions will focus on preparing you to deal with the demands of pregnancy and labor — physically and mentally. The workouts are tailored to cover identifying your body&#39;s uniquer needs, allay pregnancy discomforts, keep weight gain on track, strengthen your body for labor and set the foundation for a smooth postpartum recovery.",
-                "Eating Right-- These session will also cover aspects of nutrition and diet to ensure our moms-to-be are munching on healthy, safe, wholesome food that is crucial for her health as well as the baby&#39;s growth and development",
-                "These sessions are high-energy, super fun, and what&#39;s more? You get to meet other mummas who share the very same things that are making you feel not-so-normal right now. We are all here to help you know that--&quot;You&#39;ve got this&quot;!",
+                "A fit mom is a happy mom. Plain and simple. Our prenatal fitness program is designed to help our mummas build strength and well-being into their everyday routines. These regular, twice-a-week sessions will focus on preparing you to deal with the demands of pregnancy and labor — physically and mentally. The workouts are tailored to cover identifying your body's uniquer needs, allay pregnancy discomforts, keep weight gain on track, strengthen your body for labor and set the foundation for a smooth postpartum recovery.",
+                "Eating Right-- These session will also cover aspects of nutrition and diet to ensure our moms-to-be are munching on healthy, safe, wholesome food that is crucial for her health as well as the baby's growth and development",
+                "These sessions are high-energy, super fun, and what's more? You get to meet other mummas who share the very same things that are making you feel not-so-normal right now. We are all here to help you know that--&quot;You've got this&quot;!",
                 "Our sessions are twice a week.",
                 "Get in touch to know the available batches."
             ]
