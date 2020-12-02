@@ -28,3 +28,19 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.mobile {
+    display: block !important;
+
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.desktop {
+    display: none !important;
+
+    @media (min-width: 768px) {
+        display: block !important;
+    }
+}

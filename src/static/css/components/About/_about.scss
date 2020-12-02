@@ -10,6 +10,9 @@
         z-index: 10;
         padding-left: 15px;
         padding-right: 15px;
+        
+        // @media (min-width: 768px) {
+        // }
     }
 
     &__header {
@@ -27,7 +30,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: .2;
-        width: 100%;
+        width: 90%;
 
         @media (min-width: 992px) {
             width: 30%;

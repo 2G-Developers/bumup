@@ -11,21 +11,21 @@ import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Mantra from '../components/Mantra/Mantra'
 import Navbar from '../components/Navbar/Navbar'
+import Floater from '../components/Floater/Floater'
 
 function Home() {
   return (
-    <div className="App">
+    <div className="App" style={{overflowX: "hidden"}}>
             <Navbar />
             <Carousel images={HomeBanner} altText="Hero" 
-                imagesMobile={HomeMobile} heading="Strong,happy mummas" subheading="At Bump up, we believe that every pregnancy should be a happy pregnancy! We offer programs to help 
-                mummas (and daddies) simply enjoy their experience of pregnancy and stay healthy, fit and sorted to 
-                make the best of their bump(y) times. " />
+                imagesMobile={HomeMobile} />
             <Offer />
             <About />
             <Mantra />
             <Founder />
             <Contact />
             <Footer />
+            <Floater />
     </div>
   );
 }

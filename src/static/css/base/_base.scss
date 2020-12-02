@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @font-face {
     font-family: 'Hearth Stone';
     src: url('Hearth_Stone.ttf');
 }
 
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../../font/Poppins-Regular.ttf');
-}
+// @font-face {
+//     font-family: 'Poppins-Regular';
+//     src: url('../../font/Poppins-Regular.ttf');
+// }
 
-@font-face {
-    font-family: 'Poppins-Semi';
-    src: url('../../font/Poppins-SemiBold.ttf');
-}
+// @font-face {
+//     font-family: 'Poppins-Semi';
+//     src: url('../../font/Poppins-SemiBold.ttf');
+// }
 
 *, *::before, *::after {
     margin: 0;
@@ -47,6 +47,7 @@ body {
     box-sizing: border-box;
     min-height: 100%;
     position: relative;
+    overflow-x: hidden;
     height: 100%;
     background: var(--bg-color);
     font-family: 'Poppins', sans-serif;

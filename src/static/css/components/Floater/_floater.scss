@@ -1,0 +1,20 @@
+.floater {
+    position: fixed;
+    top: 60%;
+    left: 0;
+    width: 60px;
+    z-index: 1000;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &__item {
+        padding: 1rem;
+        background: #f4e22c;
+
+        &:first-child {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

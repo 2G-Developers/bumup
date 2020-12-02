@@ -52,8 +52,14 @@
 
     &__form {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+        
+        @media (min-width: 768px) {
+            grid-gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        }
 
         &--secondary {
             display: flex;
@@ -98,7 +104,7 @@
 
     &__button {
         text-align: left;
-        margin-top: 3rem;
+        margin-top: 5rem;
         
 
         &--text {
@@ -119,7 +125,8 @@
         }
         &--img {
             cursor: pointer;
-            margin-left: 0.2rem;
+            margin-left: 1rem;
+            width: 32px;
         }
     }
 }
