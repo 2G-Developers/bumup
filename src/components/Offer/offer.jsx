@@ -80,8 +80,8 @@ const Offer = () => {
     }
 
     return(
-        <section className="offer" id="offer">
-            <div className="container offer__banner">
+        <section className="offer offer__banner" id="offer">
+            <div className="container">
                 <div className="row">
                     <div className="offer__wrapper" style={{flexDirection: "column"}}>
                             {

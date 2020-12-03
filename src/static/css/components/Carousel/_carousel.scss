@@ -4,6 +4,7 @@
     &__img {
         display: flex;
         justify-content: center;
+        height: 85vh;
     }
 
     &__caption {
@@ -14,19 +15,24 @@
     &__header {
         color: #f4e22c;
         font-family: 'Hearth Stone', sans-serif;
-        font-size: 6.25rem;
         font-weight: 300;
         margin: 0 auto;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        font-size: 5rem;
         
-        @include respond(tab-port) {
-            margin-bottom: 1rem;
-            line-height: 1.3;
+        @media (min-width: 768px) {
+            font-size: 5rem;
+        }
+
+        @media (min-width: 1120px) {
+            font-size: 7.5rem;
         }
     }
 
     &__content {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         margin-bottom: 0;
         margin-top: 0;
 
@@ -35,7 +41,8 @@
 
         font-weight: normal;
         @include respond(tab-port) {
-            font-size: 1.8rem;
+            font-size: clamp(1rem,1.7rem, 1.7rem);
+            line-height: 1.5;
             padding-left:1.5rem;
             padding-right:1.5rem;
         }
@@ -52,17 +59,23 @@
 }
 
 .mobile-carousel {
-    display: none;
+    display: block;
     width: 100%;
-    @include respond(phone) {
-        display: block;
+    @media (min-width: 768px) {
+        display: none;
     }
 }
 
 .desktop-carousel {
-    display: block;
+    display: none;
     width: 100%;
-    @include respond(phone) {
-        display: none;
+    @media (min-width: 768px) {
+        display: block;
     }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
