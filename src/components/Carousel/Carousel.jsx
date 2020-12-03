@@ -11,9 +11,9 @@ function Carousel({images, imagesMobile, altText}) {
                     <h3 className="hero__header desktop">Strong, happy mummas</h3>
                     
                     <div className="hero__content desktop">
-                        <p>At Bump up, we believe that every pregnancy should be a happy pregnancy! We offer programs to help</p>
-                        <p>mummas (and daddies) simply enjoy their experience of pregnancy and stay healthy, fit and sorted to </p>
-                        <p>make the best of their bump(y) times.</p>
+                        <p style={{whiteSpace: "nowrap"}}>At Bump up, we believe that every pregnancy should be a happy pregnancy! We offer programs to help</p>
+                        <p style={{whiteSpace: "nowrap"}}>mummas (and daddies) simply enjoy their experience of pregnancy and stay healthy, fit and sorted to </p>
+                        <p style={{whiteSpace: "nowrap"}}>make the best of their bump(y) times.</p>
                     </div>
 
                     <div className="hero__content mobile">

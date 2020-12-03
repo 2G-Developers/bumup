@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import ArrowRightCircle from '../../static/img/send.svg'
 import Phone from '../../static/img/phone.svg'
-import Mail from '../../static/img/mail.svg'
+import Mail from '../../static/img/email.svg'
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();

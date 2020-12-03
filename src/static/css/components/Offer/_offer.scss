@@ -1,5 +1,6 @@
 .offer {
     overflow: hidden;
+    position: relative;
     
     &__banner {
         padding: 5rem 0;
@@ -48,7 +49,21 @@
             flex-direction: column;
             width: 100%;
             overflow-y: auto;
-            max-height: 700px;
+            max-height: 650px;
+
+            &::-webkit-scrollbar {
+                width: .5rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0);
+                border-radius: 50px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #f4e22c;
+                border-radius: 50px;
+              }
         }
     }
 
@@ -59,6 +74,7 @@
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 15px;
+        z-index: 100;
         
         @media (min-width: 768px) {
             flex: 0 0 35%;
@@ -75,6 +91,7 @@
         width: 100%;
         overflow: hidden;
         order: -1;
+        z-index: 100;
         
         @media (min-width: 768px) {
             order: 0;
@@ -105,6 +122,11 @@
         padding-left: 15px;
         padding-right: 15px;
 
+        &--subheading {
+            color: #000;
+            font-weight: 600;
+        }
+
         &--animate {
             transform: translateX(0);
         }
@@ -121,5 +143,19 @@
             padding-right: 15px;
 
         }
+    }
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(255,255,255,.5);
+
+    @media (min-width: 768px) {
+        display: none;
     }
 }
