@@ -3,10 +3,12 @@ import { useForm } from "react-hook-form";
 import ArrowRightCircle from '../../static/img/send.svg'
 import Phone from '../../static/img/phone.svg'
 import Mail from '../../static/img/email.svg'
+import Dropdown from '../Dropdown/Dropdown';
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const [isMailSent, setMailSent] = useState(false);
+    const [dropdownValue, setdropdownValue] = useState('')
 
     const toastStyle = {
         "marginTop": "1rem"
@@ -63,13 +65,12 @@ const Contact = () => {
                                             <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="fname" placeholder="Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
                                             <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
                                             <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, pattern: /^[0-9+]+$/i})} />
-                                            
+                                            <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} />
                                         </div>
-                                        <div className="enquiry__form--secondary" style={{marginTop: "5rem"}}>
+                                        {/* <div className="enquiry__form--secondary" style={{marginTop: "5rem"}}>
                                             <span style={{textAlign: "left", marginBottom: ".5rem", color: "#cbcbcb"}}>Message</span>
                                             <textarea style={{borderColor: `${errors.fname ? 'red': ''}`}} name="message" id="message" cols="30" rows="10" className="enquiry__input enquiry__input--textarea" ref={register({required: true, minLength: 2})}></textarea>
-                                        </div>
-
+                                        </div> */}
                                         <div className="enquiry__button">
                                             <button type="submit" className="enquiry__button--text" >Send <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/></button>
                                         </div>

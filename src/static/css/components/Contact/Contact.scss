@@ -1,5 +1,5 @@
 .enquiry {
-    margin: 5rem 0;
+    // margin: 5rem 0;
     padding: 5rem 0;
     margin-bottom: 0;
     background: #f5f5f5;
@@ -56,19 +56,20 @@
         grid-gap: 5rem;
         
         @media (min-width: 768px) {
-            grid-gap: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 5rem;
+            // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
 
         }
 
-        &--secondary {
-            display: flex;
-            flex-direction: column;
+        // &--secondary {
+        //     display: flex;
+        //     flex-direction: column;
             
-            textarea {
-                resize: none;
-            }
-        }
+        //     textarea {
+        //         resize: none;
+        //     }
+        // }
     }
 
     &__input {
