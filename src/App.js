@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Floater from './components/Floater/Floater';
 import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+
 import contactPage from './pages/contact';
 import Home from './pages/home';
 import program from './pages/program';
@@ -12,7 +12,7 @@ function App() {
     <Router>
       {/* <ScrollToTop> */}
         <div className="app">
-          <Navbar />
+
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/program" component={program} />

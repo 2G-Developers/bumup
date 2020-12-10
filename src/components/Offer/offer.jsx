@@ -5,7 +5,7 @@ import BounceBack from './BounceBack';
 import EverythingLabor from './EverythingLabor';
 import MummaStrong from './MummaStrong';
 
-const Offer = () => {
+function Offer({class1='offer-page__card-body-active',class2='offer-page__card-body',class3='offer-page__card-body', class4='offer-page__card-body'}){
 
     return(
         <Router>
@@ -35,7 +35,7 @@ const Offer = () => {
                         </div>
 
                         <div className="offer-page__card">
-                            <Link to="/program" className="offer-page__card-body">
+                            <Link to="/program" className={class1}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Baby-ready</h3>
                                 </div>
@@ -43,7 +43,7 @@ const Offer = () => {
                                     <p>A pre-conception workshop</p>
                                 </div>
                             </Link>
-                            <Link to="/program/mummastrong" className="offer-page__card-body">
+                            <Link to="/program/mummastrong" className={class2}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Mumma-Strong</h3>
                                 </div>
@@ -51,7 +51,7 @@ const Offer = () => {
                                     <p>A postnatal fitness program</p>
                                 </div>
                             </Link>
-                            <Link to="/program/everythinglabor" className="offer-page__card-body">
+                            <Link to="/program/everythinglabor" className={class3}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Everything-labor</h3>
                                 </div>
@@ -59,7 +59,7 @@ const Offer = () => {
                                     <p>A birth-preparedness workshop</p>
                                 </div>
                             </Link>
-                            <Link to="/program/bounceback" className="offer-page__card-body">
+                            <Link to="/program/bounceback" className={class4}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Bounce-Back</h3>
                                 </div>
@@ -83,5 +83,6 @@ const Offer = () => {
         </Router>
     )
 }
+
 
 export default Offer;

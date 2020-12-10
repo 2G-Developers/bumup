@@ -3,7 +3,7 @@ import BounceBack from '../../static/img/BounceBack.svg';
 import BabyReady from '../../static/img/Baby-ready.svg';
 import EverythingLabor from '../../static/img/EverythingLabor.svg';
 import MummaStrong from '../../static/img/MummaStrong.svg';
-
+import { Link } from "react-router-dom";
 
 const OfferSecondary = () => {
     return (
@@ -30,6 +30,7 @@ const OfferSecondary = () => {
                     </div>
 
                     <div className="offer__card">
+                    <Link to="/program" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                             <div className="offer__card-image">
                                 <img src={BabyReady} alt="" className="offer__svg"/>
@@ -41,9 +42,11 @@ const OfferSecondary = () => {
                                 <p>A pre-conception workshop</p>
                             </div>
                         </div>
+                    </Link>
+                    <Link to="/program/mummastrong" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                             <div className="offer__card-image">
-                                <img src={BounceBack} alt="" className="offer__svg"/>
+                                <img src={MummaStrong} alt="" className="offer__svg"/>
                             </div>
                             <div className="offer__card-subheading">
                                 <h3>Mumma-Strong</h3>
@@ -52,6 +55,8 @@ const OfferSecondary = () => {
                                 <p>A postnatal fitness program</p>
                             </div>
                         </div>
+                        </Link> 
+                        <Link to="/program/everythinglabor" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                             <div className="offer__card-image">
                                 <img src={EverythingLabor} alt="" className="offer__svg"/>
@@ -63,9 +68,11 @@ const OfferSecondary = () => {
                                 <p>A birth-preparedness workshop</p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to="/program/bounceback" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                             <div className="offer__card-image">
-                                <img src={MummaStrong} alt="" className="offer__svg"/>
+                                <img src={BounceBack} alt="" className="offer__svg"/>
                             </div>
                             <div className="offer__card-subheading">
                                 <h3>Bounce-Back</h3>
@@ -74,6 +81,7 @@ const OfferSecondary = () => {
                                 <p>A postnatal fitness program</p>
                             </div>
                         </div>
+                        </Link>
                     </div>
 
                 </div>
