@@ -65,7 +65,9 @@ const Contact = () => {
                                             <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="fname" placeholder="Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
                                             <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
                                             <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, pattern: /^[0-9+]+$/i})} />
-                                            <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} />
+                                            <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="details" placeholder="Details" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                                            
+                                            {/* <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} /> */}
                                         </div>
                                         {/* <div className="enquiry__form--secondary" style={{marginTop: "5rem"}}>
                                             <span style={{textAlign: "left", marginBottom: ".5rem", color: "#cbcbcb"}}>Message</span>
