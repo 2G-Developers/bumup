@@ -32,7 +32,7 @@ const MummaStrong = () => {
                         <p>Get in touch to know the available batches.</p>
                     </div>
                     <div className="offer-page__text">
-                        <a href="index" className="offer-page__button">Enquire now</a>
+                        <a href="/contact" className="offer-page__button">Enquire now</a>
                     </div>
 
                 </div>

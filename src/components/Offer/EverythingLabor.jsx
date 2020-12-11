@@ -26,7 +26,7 @@ const EverythingLabor = () => {
                         <p>‘Everything labor’ will take you through all these steps to ensure you and your partner are equipped with handy information and tips for the big day.</p>
                     </div>
                     <div className="offer-page__text">
-                        <a href="index" className="offer-page__button">Enquire now</a>
+                        <a href="/contact" className="offer-page__button">Enquire now</a>
                     </div>
 
                 </div>

@@ -26,7 +26,7 @@ const BabyReady = () => {
                         <p>*everything non-clinical, of course.</p>
                     </div>
                     <div className="offer-page__text">
-                        <a href="index" className="offer-page__button">Enquire now</a>
+                        <a href="/contact" className="offer-page__button">Enquire now</a>
                     </div>
 
                 </div>
