@@ -1,11 +1,54 @@
-import React from 'react'
+import React ,{ useState } from 'react'
 import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import BabyReady from './BabyReady';
 import BounceBack from './BounceBack';
 import EverythingLabor from './EverythingLabor';
 import MummaStrong from './MummaStrong';
 
-function Offer({class1='offer-page__card-body-active',class2='offer-page__card-body',class3='offer-page__card-body', class4='offer-page__card-body'}){
+
+function Offer({class1='offer-page__card-body',class2='offer-page__card-body',class3='offer-page__card-body', class4='offer-page__card-body'}){
+    const myurl = window.location.href
+    if (myurl.indexOf("mummastrong")!==-1)
+    {
+        class2='offer-page__card-body-active'
+    
+    }
+    else if (myurl.indexOf("everythinglabor")!==-1)
+    {
+        class3='offer-page__card-body-active'
+    }        
+    else if (myurl.indexOf("bounceback")!==-1)
+    {
+        class4='offer-page__card-body-active'
+    }   
+   else{
+    class1 ='offer-page__card-body-active'
+   }
+    const [state,setclassstate ] = useState({class1state:class1,class2state:class2,class3state:class3,class4state:class4});
+    const defaultclass = 'offer-page__card-body'
+    const activeclass = 'offer-page__card-body-active'
+function update_active(i)
+{
+            
+
+    if (i === 1)
+    {
+        setclassstate({class1state:activeclass,class2state:defaultclass,class3state:defaultclass,class4state:defaultclass})
+    }
+    if (i === 2)
+    {
+        setclassstate({class1state:defaultclass,class2state:activeclass,class3state:defaultclass,class4state:defaultclass})
+    }        
+    if (i === 3)
+    {
+        setclassstate({class1state:defaultclass,class2state:defaultclass,class3state:activeclass,class4state:defaultclass})
+    } 
+    if (i === 4)
+    {
+        setclassstate({class1state:defaultclass,class2state:defaultclass,class3state:defaultclass,class4state:activeclass})
+    }
+}
+    
 
     return(
         <Router>
@@ -35,7 +78,7 @@ function Offer({class1='offer-page__card-body-active',class2='offer-page__card-b
                         </div>
 
                         <div className="offer-page__card">
-                            <Link to="/program" className={class1}>
+                            <Link to="/program" className={state.class1state} onClick={() =>update_active(1)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Baby-ready</h3>
                                 </div>
@@ -43,7 +86,7 @@ function Offer({class1='offer-page__card-body-active',class2='offer-page__card-b
                                     <p>A pre-conception workshop</p>
                                 </div>
                             </Link>
-                            <Link to="/program/mummastrong" className={class2}>
+                            <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Mumma-Strong</h3>
                                 </div>
@@ -51,7 +94,7 @@ function Offer({class1='offer-page__card-body-active',class2='offer-page__card-b
                                     <p>A postnatal fitness program</p>
                                 </div>
                             </Link>
-                            <Link to="/program/everythinglabor" className={class3}>
+                            <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Everything-labor</h3>
                                 </div>
@@ -59,7 +102,7 @@ function Offer({class1='offer-page__card-body-active',class2='offer-page__card-b
                                     <p>A birth-preparedness workshop</p>
                                 </div>
                             </Link>
-                            <Link to="/program/bounceback" className={class4}>
+                            <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Bounce-Back</h3>
                                 </div>
