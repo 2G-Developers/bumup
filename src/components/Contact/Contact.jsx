@@ -3,12 +3,12 @@ import { useForm } from "react-hook-form";
 import ArrowRightCircle from '../../static/img/send.svg'
 import Phone from '../../static/img/phone.svg'
 import Mail from '../../static/img/email.svg'
-// import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const [isMailSent, setMailSent] = useState(false);
-    // const [dropdownValue, setdropdownValue] = useState('')
+    const [dropdownValue, setdropdownValue] = useState('')
 
     const toastStyle = {
         "marginTop": "1rem"
@@ -65,9 +65,9 @@ const Contact = () => {
                                             <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="fname" placeholder="Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
                                             <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
                                             <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, pattern: /^[0-9+]+$/i})} />
-                                            <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="details" placeholder="Details" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                                            {/* <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="details" placeholder="Details" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} /> */}
                                             
-                                            {/* <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} /> */}
+                                            <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} />
                                         </div>
                                         {/* <div className="enquiry__form--secondary" style={{marginTop: "5rem"}}>
                                             <span style={{textAlign: "left", marginBottom: ".5rem", color: "#cbcbcb"}}>Message</span>
