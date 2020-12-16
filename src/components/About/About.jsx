@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as Bumpup} from '../../static/img/Bump.svg'
+// import {ReactComponent as Bumpup} from '../../static/img/Bump.svg'
 
 function About(){
     return(
@@ -59,7 +59,7 @@ function About(){
                 </div>
             </div>
 
-            <Bumpup className="about__img" />
+            {/* <Bumpup className="about__img" /> */}
 
         </section>
     )

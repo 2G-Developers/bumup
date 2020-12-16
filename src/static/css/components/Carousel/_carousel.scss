@@ -29,6 +29,24 @@
             font-size: 7.5rem;
         }
     }
+    &__header__bumpup {
+        color: #f4e22c;
+        font-family: 'Hearth Stone', sans-serif;
+        font-weight: 300;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+        line-height: 1.3;
+        font-size: 4rem;
+        
+        @media (min-width: 768px) {
+            font-size: 4rem;
+        }
+
+        @media (min-width: 1120px) {
+            font-size: 6.5rem;
+        }
+    }
 
     &__content {
         color: #fff;

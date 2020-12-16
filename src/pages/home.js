@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from './../components/Carousel/Carousel'
-import About from './../components/About/About'
+
 
 
 import HomeBanner from './../static/img/Home-Banner.png'
@@ -17,7 +17,7 @@ function Home() {
             <Carousel images={HomeBanner} altText="Hero" 
                 imagesMobile={HomeMobile} />
             <OfferSecondary />
-            <About />
+
             <Mantra />
             <Founder />
     </div>

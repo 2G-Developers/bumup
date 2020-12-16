@@ -29,7 +29,7 @@ import {ReactComponent as Bumpup} from '../../static/img/Bump.svg'
 import React , { useState } from 'react'
 import { Link } from "react-router-dom";
 
-function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list",color='#fff'}){
+function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list",class4="navbar-list",color='#fff'}){
     const [showNav,setShownav ] = useState(false);
     const [navbar, setNavbar] = useState(false);
 
@@ -65,6 +65,7 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
         <div className="navbar-content">
             <Link to="/" className={class1}>Home</Link>
             <Link to="/program" className={class2}>Program</Link>
+            <Link to="/whybumpup" className={class4}>About</Link>
             <Link to="/contact" className={class3}>Contact</Link>
 
         </div>
