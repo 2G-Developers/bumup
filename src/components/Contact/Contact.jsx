@@ -3,12 +3,12 @@ import { useForm } from "react-hook-form";
 import ArrowRightCircle from '../../static/img/send.svg'
 import Phone from '../../static/img/phone.svg'
 import Mail from '../../static/img/email.svg'
-import Dropdown from '../Dropdown/Dropdown';
+// import Dropdown from '../Dropdown/Dropdown';
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const [isMailSent, setMailSent] = useState(false);
-    const [dropdownValue, setdropdownValue] = useState('')
+    // const [dropdownValue, setdropdownValue] = useState('')
 
     const toastStyle = {
         "marginTop": "1rem"
