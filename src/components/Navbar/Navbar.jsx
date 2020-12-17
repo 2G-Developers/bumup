@@ -45,7 +45,7 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
 
     return(
 
-    <div className="nav">
+    <div className="nav desktop">
 
     <div className={navbar ? 'navbar active-nav': 'navbar'} style={{background: `${ navbar ? color : 'transparent'}`}}>
         {isSecondary ? null : <Link to="/"><Bumpup className="logo" /></Link> }
