@@ -35,7 +35,7 @@ const NavbarMobile = () => {
                 <ul className="navbar-mobile__item">
                     <li className={`${myUrl.endsWith("/")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/" className="navbar-mobile__link">Home</Link></li>
                     <li className={`${myUrl.includes("program")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/program" className="navbar-mobile__link">Program</Link></li>
-                    <li className={`${myUrl.includes("about")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/about" className="navbar-mobile__link">About</Link></li>
+                    <li className={`${myUrl.includes("whybumpup")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/whybumpup" className="navbar-mobile__link">About</Link></li>
                     <li className={`${myUrl.includes("contact")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/contact" className="navbar-mobile__link">Contact</Link></li>
                 </ul>
             </div>
