@@ -1,7 +1,11 @@
 .offer-page {
     overflow: hidden;
     position: relative;
-    padding: 12rem 0;
+    padding: 14rem 0;
+    
+    @media (min-width: 768px) {
+        padding: 12rem 0;
+    }
 
     &__container {
         @media (min-width: 768px) {
