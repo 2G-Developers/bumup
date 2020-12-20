@@ -56,7 +56,7 @@ function update_active(i)
                 <div className="container">
                     <div className="row">
                         <div className="offer-page__header offer-page__header--signature">
-                            <h1>What do we offer?</h1>
+                            <h1 style={{fontSize: "3.75rem"}}>What do we offer?</h1>
                         </div>
 
                         <div className="offer-page__container">

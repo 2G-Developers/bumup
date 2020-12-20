@@ -47,12 +47,12 @@ const Contact = () => {
 
     return (
         <section id="enquiry" className="enquiry">
-            <div className="container">
+            <div className="container container-enquiry">
                 <div className="row" style={{justifyContent: "center"}}>
                     <div className="enquiry__medium">
                         <div className="enquiry__wrapper">
                                 <div className="enquiry__header">
-                                    <h1>Get in Touch</h1>
+                                    <h1 style={{fontSize: "3.75rem"}}>Get in Touch</h1>
                                     <div className="enquiry__details">
                                         <a href="mailto:contact@bumpup.co"><img src={Mail} style={{width: "1.5rem", height: "1.5rem"}} alt="mail"/> contact@bumpup.co</a>
                                         <a href="tel:+918248749487"><img src={Phone} style={{width: "1.5rem", height: "1.5rem"}} alt="Phone"/> +91 82487 49487</a>
