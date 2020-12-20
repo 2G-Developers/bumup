@@ -10,10 +10,12 @@
     &__medium {
         padding-left: 15px;
         padding-right: 15px;
+        width: 100%;
 
         @media (min-width: 768px) {
             flex: 0 0 100%;
             max-width: 100%;
+            width: unset;
         }
     }
 
