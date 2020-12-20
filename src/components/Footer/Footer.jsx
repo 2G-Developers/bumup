@@ -3,7 +3,6 @@ import React from 'react'
 
 import {ReactComponent as Facebook} from '../../static/img/facebook.svg'
 import {ReactComponent as Instagram} from '../../static/img/instagram.svg'
-import {ReactComponent as Linkedin} from '../../static/img/linkedin.svg'
 
 const Footer = () => {
     return (
