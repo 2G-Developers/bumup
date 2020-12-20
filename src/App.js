@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/program" component={program} />
-            <Route path="/contact" component={contactPage} />
+            <Route exact path="/contact" component={contactPage} />
             <Route path="/whybumpup" component={whybumpup} />
 
           </Switch>
