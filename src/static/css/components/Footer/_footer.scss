@@ -3,9 +3,14 @@
     padding: 2rem 0;
     margin-bottom: 0%;
     &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 100%;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
         
         @include respond(tab-port) { // width < 900?
             grid-row-gap: 1rem;

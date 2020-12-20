@@ -26,7 +26,7 @@ import {ReactComponent as Bumpup} from '../../static/img/Bump.svg'
 
 // export default Navbar
 
-import React , { useState } from 'react'
+import React , { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
 function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list",class4="navbar-list",color='#fff'}){
@@ -41,7 +41,12 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
         }
     }
 
-    window.addEventListener('scroll', changeBackground)
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground)
+        return () => {
+            window.removeEventListener('scroll', changeBackground)
+        }
+    }, [])
 
     return(
 

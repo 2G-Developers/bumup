@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import {ReactComponent as Bumpup} from '../../static/img/Bump.svg'
 
@@ -16,7 +16,14 @@ const NavbarMobile = ({isSecondary}) => {
         }
     }
 
-    window.addEventListener('scroll', scrollBackground)
+    useEffect(() => {
+        window.addEventListener('scroll', scrollBackground)
+        return () => {
+            window.removeEventListener('scroll', scrollBackground)
+        }
+    }, [])
+
+    
 
     return (
         <nav className={`${collapse ? 'navbar-mobile mobile navbar-mobile--white': 'navbar-mobile mobile'}`} style={{background: `${ navbar ? '#fff' : 'transparent'}`}}>
