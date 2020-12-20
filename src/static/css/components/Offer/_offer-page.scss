@@ -19,7 +19,14 @@
             text-align: left;
             padding-left: 15px;
             padding-right: 15px;
+        }
 
+        &--signature {
+
+            h1 {
+                font-family: "Hearth Stone",sans-serif;
+                color: #f4e22c;
+            }
         }
     }
 
@@ -52,11 +59,13 @@
             padding: 0 2rem;
             border: solid #f4e22c;
             border-width: 2px 2px 7px;
+            border-radius: 8px;
             text-decoration: none;
-
+            
         }
         &-body-active {
             // background: #f4e22c;
+            border-radius: 8px;
             padding: 0 2rem;
             border: solid #7ccdce;
             border-width: 2px 2px 7px;

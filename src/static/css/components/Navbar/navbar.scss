@@ -133,6 +133,14 @@
     width: 100%;
     transition: all 300ms ease-in;
 
+    &--white {
+      background: #fff !important;
+    }
+
+    &--black {
+      background: #000 !important;
+    }
+
     &__hamburg {
       margin-right: 2rem;
     }

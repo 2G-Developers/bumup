@@ -12,8 +12,8 @@ import NavbarMobile from '../components/Navbar/NavbarMobile'
 function Home() {
   return (
     <div className="App">
-            <Navbar class4="navbar-list-active"/>
-            <NavbarMobile />
+            <Navbar class4="navbar-list-active" isSecondary={true} />
+            <NavbarMobile isSecondary={true} />
             <Carousel images={HomeBanner} altText="Hero" 
                 imagesMobile={HomeMobile} />
             <About />

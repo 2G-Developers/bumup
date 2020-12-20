@@ -10,7 +10,7 @@ const OfferSecondary = () => {
         <section className="offer">
             <div className="container">
                 <div className="row">
-                    <div className="offer__header">
+                    <div className="offer__header offer__header--signature">
                         <h1>What do we offer?</h1>
                     </div>
 

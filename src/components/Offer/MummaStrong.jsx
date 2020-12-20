@@ -1,5 +1,6 @@
 import React from 'react'
 import MummaStrongImage from '../../static/img/MummaStrong.svg';
+import { Link } from 'react-router-dom';
 
 const MummaStrong = () => {
     return (
@@ -23,7 +24,7 @@ const MummaStrong = () => {
                         <p>Eating Right-- These session will also cover aspects of nutrition and diet to ensure our moms-to-be are munching on healthy, safe, wholesome food that is crucial for her health as well as the baby's growth and development</p>
                     </div>
                     <div className="offer-page__text">
-                        <p>These sessions are high-energy, super fun, and what\'s more? You get to meet other mummas who share the very same things that are making you feel not-so-normal right now. We are all here to help you know that--"You\'ve got this"!</p>
+                        <p>These sessions are high-energy, super fun, and what's more? You get to meet other mummas who share the very same things that are making you feel not-so-normal right now. We are all here to help you know that--"You've got this"!</p>
                     </div>
                     <div className="offer-page__text">
                         <p>Our sessions are twice a week.</p>
@@ -32,7 +33,7 @@ const MummaStrong = () => {
                         <p>Get in touch to know the available batches.</p>
                     </div>
                     <div className="offer-page__text">
-                        <a href="/contact" className="offer-page__button">Enquire now</a>
+                        <Link to="/contact" className="offer-page__button">Enquire now</Link>
                     </div>
 
                 </div>

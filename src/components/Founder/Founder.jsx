@@ -28,7 +28,7 @@ a happy pregnancy!
                         </p>
 
                         <div className="founder__signature">
-                            <p className="founder__text--signature">Kavya natarajan</p>
+                            <p className="founder__text--signature">Kavya Natarajan</p>
                             <p className="founder__text" style={{marginBottom: "0", textAlign: "center"}}>Founder, Bump up</p>
                             <p className="founder__text" style={{marginBottom: "0", textAlign: "center"}}>Certified Pregnancy Fitness Educator (CAPPA)</p>
                         </div>

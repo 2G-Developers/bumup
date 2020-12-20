@@ -6,8 +6,8 @@ const contactPage = () => {
     return (
         <div className="App">
             
-            <Navbar class3="navbar-list-active"/>
-            <NavbarMobile />
+            <Navbar class3="navbar-list-active" isSecondary={true} />
+            <NavbarMobile isSecondary={true} />
             <Contact />
         </div>
     )

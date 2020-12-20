@@ -1,5 +1,6 @@
 import React from 'react'
 import BounceBackImage from '../../static/img/BounceBack.svg';
+import { Link } from 'react-router-dom';
 
 const BounceBack = () => {
     return (
@@ -23,7 +24,7 @@ const BounceBack = () => {
                         <p>Our ‘Bounce back’ program gives you all the flexibility you will need as a new mumma! Unable to get any baby-free time that particular day? No problem, we’ll give you options to workout with your little one! You will also have regular check-ins to track your progress and together, we’ll get you feeling your old, pre-baby self soon!</p>
                     </div>
                     <div className="offer-page__text">
-                        <a href="/contact" className="offer-page__button">Enquire now</a>
+                        <Link to="/contact" className="offer-page__button">Enquire now</Link>
                     </div>
                 </div>
             </div>

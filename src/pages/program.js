@@ -6,8 +6,8 @@ import NavbarMobile from '../components/Navbar/NavbarMobile';
 const program = () => {
     return (
         <div className="App">
-            <Navbar class2="navbar-list-active"/>
-            <NavbarMobile />
+            <Navbar class2="navbar-list-active" isSecondary={true} />
+            <NavbarMobile isSecondary={true} />
             <Offer />
         </div>
     )
