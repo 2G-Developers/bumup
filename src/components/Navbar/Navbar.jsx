@@ -72,7 +72,7 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
             <Link to="/" className={class1}>Home</Link>
             <Link to="/program" className={class2}>What do we offer?</Link>
             <Link to="/whybumpup" className={class4}>Why Bump up?</Link>
-            <Link to="/contact" className={class3}>Get in Touch</Link>
+            <Link to="/contact" className={class3}>Get in touch</Link>
 
         </div>
     </div>

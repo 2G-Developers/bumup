@@ -6,6 +6,18 @@
         justify-content: center;
         // height: 85vh;
         height: 95vh;
+
+        &--small {
+            height: 65vh !important;
+        }
+
+        &--position-bottom {
+            object-position: bottom;
+        }
+
+        &--position-top {
+            object-position: top;
+        }
     }
 
     &__caption {
