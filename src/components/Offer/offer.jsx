@@ -16,7 +16,7 @@ function ComponentDidMount(mobref,desktopref) {
                 
             }
             else{
-                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-desktop").clientHeight) ;
+                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-mobile").clientHeight) ;
              
             }
              }, [mobref,desktopref]);
