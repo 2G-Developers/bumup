@@ -8,7 +8,7 @@ import HomeMobile from './../static/img/Mobile-Banner.png'
 import Founder from '../components/Founder/Founder'
 import Mantra from '../components/Mantra/Mantra'
 import OfferSecondary from '../components/Offer/OfferSecondary'
-import Navbar from '../components/Navbar/Navbar';
+// import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile'
 
 function Home() {
