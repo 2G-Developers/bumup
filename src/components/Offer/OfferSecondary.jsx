@@ -3,7 +3,7 @@ import BounceBack from '../../static/img/BounceBack.svg';
 import BabyReady from '../../static/img/Baby-ready.svg';
 import EverythingLabor from '../../static/img/EverythingLabor.svg';
 import MummaStrong from '../../static/img/MummaStrong.svg';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const OfferSecondary = () => {
     return (
@@ -32,12 +32,14 @@ const OfferSecondary = () => {
                     <div className="offer__card">
                     <Link to="/program" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
+                        <div className="offer__card-subheading">
+                                <h2>Baby-ready</h2>
+                            </div>
+
                             <div className="offer__card-image">
                                 <img src={BabyReady} alt="" className="offer__svg"/>
                             </div>
-                            <div className="offer__card-subheading">
-                                <h3>Baby-ready</h3>
-                            </div>
+
                             <div className="offer__card-text">
                                 <p>A pre-conception workshop</p>
                             </div>
@@ -45,12 +47,13 @@ const OfferSecondary = () => {
                     </Link>
                     <Link to="/program/mummastrong" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
+                        <div className="offer__card-subheading">
+                                <h2>Mumma-Strong</h2>
+                            </div>
                             <div className="offer__card-image">
                                 <img src={MummaStrong} alt="" className="offer__svg"/>
                             </div>
-                            <div className="offer__card-subheading">
-                                <h3>Mumma-Strong</h3>
-                            </div>
+
                             <div className="offer__card-text">
                                 <p>A postnatal fitness program</p>
                             </div>
@@ -58,11 +61,11 @@ const OfferSecondary = () => {
                         </Link> 
                         <Link to="/program/everythinglabor" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
+                        <div className="offer__card-subheading">
+                                <h2>Everything-labor</h2>
+                            </div>
                             <div className="offer__card-image">
                                 <img src={EverythingLabor} alt="" className="offer__svg"/>
-                            </div>
-                            <div className="offer__card-subheading">
-                                <h3>Everything-labor</h3>
                             </div>
                             <div className="offer__card-text">
                                 <p>A birth-preparedness workshop</p>
@@ -71,12 +74,13 @@ const OfferSecondary = () => {
                         </Link>
                         <Link to="/program/bounceback" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
+                        <div className="offer__card-subheading">
+                                <h2>Bounce-Back</h2>
+                            </div>
                             <div className="offer__card-image">
                                 <img src={BounceBack} alt="" className="offer__svg"/>
                             </div>
-                            <div className="offer__card-subheading">
-                                <h3>Bounce-Back</h3>
-                            </div>
+
                             <div className="offer__card-text">
                                 <p>A postnatal fitness program</p>
                             </div>
