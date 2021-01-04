@@ -1,5 +1,5 @@
 import React ,{ useState , useEffect ,  useRef  } from 'react'
-import {BrowserRouter as Router, Link, Route, Switch , useLocation } from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import BabyReady from './BabyReady';
 import BounceBack from './BounceBack';
 import EverythingLabor from './EverythingLabor';
@@ -16,7 +16,7 @@ function ComponentDidMount(ref,mydesktop) {
             else{
                 window.scrollTo(0, mydesktop.current.offsetTop) ;
             }
-             }, []);
+             }, [ref,mydesktop]);
 
  
     return ref.current.offsetTop;
