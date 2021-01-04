@@ -1,6 +1,6 @@
 import React from 'react'
 import BabyReadyImage from '../../static/img/Baby-ready.svg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const BabyReady = () => {
     return (
@@ -27,7 +27,7 @@ const BabyReady = () => {
                         <p>*everything non-clinical, of course.</p>
                     </div>
                     <div className="offer-page__text">
-                        <Link to="/contact" className="offer-page__button">Enquire now</Link>
+                        <a href="/contact" className="offer-page__button">Enquire now</a>
                     </div>
 
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import MummaStrongImage from '../../static/img/MummaStrong.svg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const MummaStrong = () => {
     return (
@@ -33,7 +33,7 @@ const MummaStrong = () => {
                         <p>Get in touch to know the available batches.</p>
                     </div>
                     <div className="offer-page__text">
-                        <Link to="/contact" className="offer-page__button">Enquire now</Link>
+                        <a href="/contact" className="offer-page__button">Enquire now</a>
                     </div>
 
                 </div>
