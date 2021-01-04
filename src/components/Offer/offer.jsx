@@ -6,25 +6,28 @@ import EverythingLabor from './EverythingLabor';
 import MummaStrong from './MummaStrong';
 
 // const scrollToRef = (ref) => {window.scrollTo(0, ref.current.offsetTop) ;alert(ref.current.offsetTop)  }
-function ComponentDidMount(ref,mydesktop) {
+function ComponentDidMount(mobref,desktopref) {
     
         useEffect(() => {
-            if (ref.current.offsetTop)
+           
+            if (mobref.current.offsetTop)
             {
-                window.scrollTo(0, ref.current.offsetTop)  ;
+                window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight)  ;
+                
             }
             else{
-                window.scrollTo(0, mydesktop.current.offsetTop) ;
+                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-desktop").clientHeight) ;
+             
             }
-             }, [ref,mydesktop]);
+             }, [mobref,desktopref]);
 
  
-    return ref.current.offsetTop;
+    return null;
   }
   
 function Offer({class1='offer-page__card-body',class2='offer-page__card-body',class3='offer-page__card-body', class4='offer-page__card-body'}){
     const myurl = window.location.href
-    const mydesktop= useRef('desktop')
+    const desktopref= useRef('desktop')
     
     const mybaby= useRef('baby')
     const mymumma= useRef('mumma')
@@ -54,7 +57,7 @@ function Offer({class1='offer-page__card-body',class2='offer-page__card-body',cl
     myphone = mybaby;
 
    }
-   ComponentDidMount(myphone,mydesktop)
+   ComponentDidMount(myphone,desktopref)
     const [state,setclassstate ] = useState({class1state:class1,class2state:class2,class3state:class3,class4state:class4});
     const defaultclass = 'offer-page__card-body'
     const activeclass = 'offer-page__card-body-active'
@@ -100,7 +103,7 @@ function update_active(i)
                                 <div className="offer-page__text">
                                     <p>From the time you start planning for a baby to helping you make your pregnancy a fit, healthy and happy one, getting you all set for labor — and not to forget, helping you bounce back to your pre-baby self!</p>
                                 </div>
-                                <div className="offer-page__text" ref={mydesktop}>
+                                <div className="offer-page__text">
                                     <p>What more? All our programs are designed as virtual sessions giving you the flexibility to attend them from the cozy comfort of your homes!</p>
                                 </div>
                                 <div className="offer-page__text" >
@@ -109,7 +112,7 @@ function update_active(i)
                             </div>
                         </div>
 
-                        <div className="offer-page__card" >
+                        <div className="offer-page__card"  ref={desktopref}>
                             <Link to="/program" className={state.class1state} onClick={() =>update_active(1)} >
                                 <div className="offer-page__card-subheading" >
                                     <h3>Baby-ready</h3>

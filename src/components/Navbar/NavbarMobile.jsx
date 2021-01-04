@@ -26,7 +26,7 @@ const NavbarMobile = ({isSecondary}) => {
     
 
     return (
-        <nav className={`${collapse ? 'navbar-mobile mobile navbar-mobile--white': 'navbar-mobile mobile'}`} style={{background: `${ navbar ? '#fff' : 'transparent'}`}}>
+        <nav className={`${collapse ? 'navbar-mobile mobile navbar-mobile--white': 'navbar-mobile mobile'}`} style={{background: `${ navbar ? '#fff' : 'transparent'}`}} id="nav-mobile">
             <div className="navbar-mobile__wrapper">
 
                 <Link to="/"><Bumpup className="logo" /></Link> 
