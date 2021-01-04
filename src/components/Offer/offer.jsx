@@ -10,7 +10,7 @@ function ComponentDidMount(mobref,desktopref) {
     
         useEffect(() => {
            
-            if (mobref.current.offsetTop)
+            if (mobref.current && mobref.current.offsetTop)
             {
                 window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight)  ;
                 
