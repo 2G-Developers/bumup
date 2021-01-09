@@ -4,7 +4,7 @@ import About from '../components/About/About'
 
 
 import HomeBanner from './../static/img/bumphome.jpg'
-import HomeMobile from './../static/img/bumpupMobile.jpg'
+import HomeMobile from './../static/img/bumpupMobile1.jpg'
 
 // import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile'

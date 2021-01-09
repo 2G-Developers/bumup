@@ -1,9 +1,13 @@
 import React ,{ useState , useEffect ,  useRef  } from 'react'
 import {BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import Carousel from '../Carousel/Carousel';
 import BabyReady from './BabyReady';
 import BounceBack from './BounceBack';
 import EverythingLabor from './EverythingLabor';
 import MummaStrong from './MummaStrong';
+
+import ProgramBanner from '../../static/img/programImage.jpg'
+import ProgramMobile from '../../static/img/programImage.jpg'
 
 // const scrollToRef = (ref) => {window.scrollTo(0, ref.current.offsetTop) ;alert(ref.current.offsetTop)  }
 function ComponentDidMount(mobref,desktopref) {
@@ -12,11 +16,11 @@ function ComponentDidMount(mobref,desktopref) {
            
             if (mobref.current && mobref.current.offsetTop)
             {
-                window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight)  ;
+                window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight)  ;
                 
             }
             else{
-                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-mobile").clientHeight) ;
+                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight) ;
              
             }
              }, [mobref,desktopref]);
@@ -86,13 +90,15 @@ function update_active(i)
 
     return(
         <Router>
-
+            <>
+            <Carousel images={ProgramBanner} altText="Hero" 
+                imagesMobile={ProgramMobile} />
             <section className="offer-page" id="offer-page">
                 <div className="container desktop">
                     <div className="row">
-                        <div className="offer-page__header offer-page__header--signature">
+                        {/* <div className="offer-page__header offer-page__header--signature">
                             <h1 style={{fontSize: "3.75rem"}}>What do we offer?</h1>
-                        </div>
+                        </div> */}
 
                         <div className="offer-page__container"  >
 
@@ -158,9 +164,9 @@ function update_active(i)
                 </div>
                 <div className="container mobile">
                     <div className="row">
-                        <div className="offer-page__header offer-page__header--signature">
+                        {/* <div className="offer-page__header offer-page__header--signature">
                             <h1 style={{fontSize: "3.75rem"}}>What do we offer?</h1>
-                        </div>
+                        </div> */}
 
                         <div className="offer-page__container">
 
@@ -233,6 +239,7 @@ function update_active(i)
                 </div>
 
             </section>
+            </>
         </Router>
     )
 }
