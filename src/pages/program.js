@@ -2,7 +2,7 @@ import React from 'react'
 import Offer from '../components/Offer/offer'
 // import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile';
-import Carousel from '../components/Carousel/Carousel';
+// import Carousel from '../components/Carousel/Carousel';
 
 
 
