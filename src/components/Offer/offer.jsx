@@ -187,7 +187,7 @@ function update_active(i)
                         </div>
 
                         <div className="offer-page__card"   >
-                            <Link to="/program" className={state.class1state} onClick={() =>update_active(1)}  ref={mybaby}>
+                            <Link to="/program" className={state.class1state} onClick={() =>update_active(1)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Baby-ready</h3>
                                 </div>
@@ -195,11 +195,13 @@ function update_active(i)
                                     <p>A pre-conception workshop</p>
                                 </div>
                             </Link>
-                                                            
-                        <Switch>
-                            <Route exact path="/program" component={BabyReady}/>
-                        </Switch>
-                            <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}  ref={mymumma}>
+
+                        <div ref={mybaby}>
+                            <Switch>
+                                <Route exact path="/program" component={BabyReady}/>
+                            </Switch>
+                        </div>
+                            <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Mumma-Strong</h3>
                                 </div>
@@ -207,10 +209,12 @@ function update_active(i)
                                     <p>A postnatal fitness program</p>
                                 </div>
                             </Link>
-                        <Switch>
-                            <Route path="/program/mummastrong" component={MummaStrong}  />
-                        </Switch>
-                            <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)}  ref={mylabor}>
+                        <div ref={mymumma}>
+                            <Switch>
+                                <Route path="/program/mummastrong" component={MummaStrong}  />
+                            </Switch>
+                        </div>
+                            <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)} >
                                 <div className="offer-page__card-subheading">
                                     <h3>Everything-labor</h3>
                                 </div>
@@ -218,10 +222,12 @@ function update_active(i)
                                     <p>A birth-preparedness workshop</p>
                                 </div>
                             </Link>
-                        <Switch>
-                            <Route path="/program/everythinglabor" component={EverythingLabor} ref={mybaby}/>
-                        </Switch>
-                            <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}  ref={mybounce}>
+                        <div ref={mylabor}>
+                            <Switch>
+                                <Route path="/program/everythinglabor" component={EverythingLabor} ref={mybaby}/>
+                            </Switch>
+                        </div>
+                            <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Bounce-Back</h3>
                                 </div>
@@ -229,9 +235,11 @@ function update_active(i)
                                     <p>A postnatal fitness program</p>
                                 </div>
                             </Link>
-                        <Switch>
-                            <Route path="/program/bounceback" component={BounceBack} />
-                        </Switch>
+                            <div ref={mybounce}>
+                                <Switch>
+                                    <Route path="/program/bounceback" component={BounceBack} />
+                                </Switch>
+                            </div>
                         </div>
 
 
