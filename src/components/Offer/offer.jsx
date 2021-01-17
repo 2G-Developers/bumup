@@ -6,8 +6,8 @@ import BounceBack from './BounceBack';
 import EverythingLabor from './EverythingLabor';
 import MummaStrong from './MummaStrong';
 
-import ProgramBanner from '../../static/img/programImage.jpg'
-import ProgramMobile from '../../static/img/MobileProgram.jpg'
+import ProgramBanner from '../../static/img/What-do-we-offer-banner.jpg'
+import ProgramMobile from '../../static/img/Mobile-Banner-4.jpg'
 
 // const scrollToRef = (ref) => {window.scrollTo(0, ref.current.offsetTop) ;alert(ref.current.offsetTop)  }
 function ComponentDidMount(mobref,desktopref) {
