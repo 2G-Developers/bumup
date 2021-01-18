@@ -3,8 +3,8 @@ import Carousel from '../components/Carousel/Carousel'
 import About from '../components/About/About'
 
 
-import HomeBanner from './../static/img/bumphome.jpg'
-import HomeMobile from './../static/img/bumpupMobile1.jpg'
+import HomeBanner from './../static/img/Why-Bump-up-Banner.jpg'
+import HomeMobile from './../static/img/Mobile-Banner-3.jpg'
 
 // import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile'
