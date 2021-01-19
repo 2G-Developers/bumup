@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import ArrowRightCircle from '../../static/img/send.svg'
-import Phone from '../../static/img/phone.svg'
-import Mail from '../../static/img/email.svg'
+import Phone from '../../static/img/Call_Icon.svg'
+import Mail from '../../static/img/Mail_Icon.svg'
 import Dropdown from '../Dropdown/Dropdown';
 
 const Contact = () => {
