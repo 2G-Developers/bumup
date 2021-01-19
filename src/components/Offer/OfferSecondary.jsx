@@ -30,7 +30,7 @@ const OfferSecondary = () => {
                     </div>
 
                     <div className="offer__card">
-                    <Link to="/program" style={{ textDecoration: 'none' }}>
+                    <Link to="/program/babyready" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                         <div className="offer__card-subheading">
                                 <h2>Baby-ready</h2>

@@ -13,17 +13,22 @@ import ProgramMobile from '../../static/img/Mobile-Banner-4.jpg'
 function ComponentDidMount(mobref,desktopref) {
     
         useEffect(() => {
+            if(window.location.pathname === '/program') {
+                window.scrollTo(0, 0);
+            }
+            else {
+                if (mobref.current && mobref.current.offsetTop)
+                {
+                    window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight)  ;
+                    
+                }
+                else{
+                    window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight) ;
+                 
+                }
+            }
            
-            if (mobref.current && mobref.current.offsetTop)
-            {
-                window.scrollTo(0, mobref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight)  ;
-                
-            }
-            else{
-                window.scrollTo(0, desktopref.current.offsetTop - document.getElementById("nav-mobile").clientHeight + document.querySelector("#hero").clientHeight) ;
-             
-            }
-             }, [mobref,desktopref]);
+        }, [mobref,desktopref]);
 
  
     return null;
@@ -119,7 +124,7 @@ function update_active(i)
                         </div>
 
                         <div className="offer-page__card"  ref={desktopref}>
-                            <Link to="/program" className={state.class1state} onClick={() =>update_active(1)} >
+                            <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)} >
                                 <div className="offer-page__card-subheading" >
                                     <h3>Baby-ready</h3>
                                 </div>
@@ -155,6 +160,7 @@ function update_active(i)
 
                         <Switch>
                             <Route exact path="/program" component={BabyReady} />
+                            <Route path="/program/babyready" component={BabyReady} />
                             <Route path="/program/mummastrong" component={MummaStrong} />
                             <Route path="/program/everythinglabor" component={EverythingLabor} />
                             <Route path="/program/bounceback" component={BounceBack} />
@@ -187,7 +193,7 @@ function update_active(i)
                         </div>
 
                         <div className="offer-page__card"   >
-                            <Link to="/program" className={state.class1state} onClick={() =>update_active(1)}>
+                            <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)}>
                                 <div className="offer-page__card-subheading">
                                     <h3>Baby-ready</h3>
                                 </div>
@@ -198,7 +204,7 @@ function update_active(i)
 
                         <div ref={mybaby}>
                             <Switch>
-                                <Route exact path="/program" component={BabyReady}/>
+                                <Route exact path="/program/babyready" component={BabyReady}/>
                             </Switch>
                         </div>
                             <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
