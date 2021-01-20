@@ -12,7 +12,7 @@ const EverythingLabor = () => {
             <div className="offer-page__content" style={{marginTop: "2rem"}}>
                 <div className="offer-page__wrapper">
                     <div className="offer-page__header">
-                        <h1>Everything-labor</h1>
+                        <h1>Everything labor</h1>
                     </div>
                     <div className="offer-page__text offer-page__text-subheading">
                         <p>A carefully curated birth-preparedness workshop that will get you feeling confident and empowered to take on labor, and ace it!</p>

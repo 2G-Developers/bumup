@@ -12,7 +12,7 @@ const BounceBack = () => {
             <div className="offer-page__content" style={{marginTop: "2rem"}}>
                 <div className="offer-page__wrapper">
                     <div className="offer-page__header">
-                        <h1>Bounce-Back</h1>
+                        <h1>Bounce back</h1>
                     </div>
                     <div className="offer-page__text offer-page__text-subheading">
                         <p>A postnatal fitness program focused on nutrition planning and workout routines customised to suit your body and schedule</p>

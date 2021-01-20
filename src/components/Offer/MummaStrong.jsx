@@ -12,7 +12,7 @@ const MummaStrong = () => {
             <div className="offer-page__content" style={{marginTop: "2rem"}}>
                 <div className="offer-page__wrapper">
                     <div className="offer-page__header">
-                        <h1>Mumma-Strong</h1>
+                        <h1>Mumma strong</h1>
                     </div>
                     <div className="offer-page__text offer-page__text-subheading">
                         <p>A prenatal fitness program focused on the total health and wellness of our mummas-to-be — both on the outside and on the inside!</p>

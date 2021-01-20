@@ -10,8 +10,8 @@ const OfferSecondary = () => {
         <section className="offer">
             <div className="container">
                 <div className="row">
-                    <div className="offer__header">
-                        <h1>What do we offer?</h1>
+                    <div className="offer__header" style={{width: "100%"}}>
+                        <h1 style={{textAlign: "center"}}>What do we offer?</h1>
                     </div>
 
                     {/* <div className="offer__container">
