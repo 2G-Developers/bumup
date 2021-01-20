@@ -134,15 +134,15 @@ function update_active(i)
                             </Link>
                             <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
                                 <div className="offer-page__card-subheading">
-                                    <h3>Mumma-Strong</h3>
+                                    <h3>Mumma strong</h3>
                                 </div>
                                 <div className="offer-page__card-text">
-                                    <p>A postnatal fitness program</p>
+                                    <p>A prenatal fitness program</p>
                                 </div>
                             </Link>
                             <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)}>
                                 <div className="offer-page__card-subheading">
-                                    <h3>Everything-labor</h3>
+                                    <h3>Everything labor</h3>
                                 </div>
                                 <div className="offer-page__card-text">
                                     <p>A birth-preparedness workshop</p>
@@ -150,7 +150,7 @@ function update_active(i)
                             </Link>
                             <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
                                 <div className="offer-page__card-subheading">
-                                    <h3>Bounce-Back</h3>
+                                    <h3>Bounce back</h3>
                                 </div>
                                 <div className="offer-page__card-text">
                                     <p>A postnatal fitness program</p>
@@ -209,10 +209,10 @@ function update_active(i)
                         </div>
                             <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
                                 <div className="offer-page__card-subheading">
-                                    <h3>Mumma-Strong</h3>
+                                    <h3>Mumma strong</h3>
                                 </div>
                                 <div className="offer-page__card-text">
-                                    <p>A postnatal fitness program</p>
+                                    <p>A prenatal fitness program</p>
                                 </div>
                             </Link>
                         <div ref={mymumma}>
@@ -222,7 +222,7 @@ function update_active(i)
                         </div>
                             <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)} >
                                 <div className="offer-page__card-subheading">
-                                    <h3>Everything-labor</h3>
+                                    <h3>Everything labor</h3>
                                 </div>
                                 <div className="offer-page__card-text">
                                     <p>A birth-preparedness workshop</p>
@@ -235,7 +235,7 @@ function update_active(i)
                         </div>
                             <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
                                 <div className="offer-page__card-subheading">
-                                    <h3>Bounce-Back</h3>
+                                    <h3>Bounce back</h3>
                                 </div>
                                 <div className="offer-page__card-text">
                                     <p>A postnatal fitness program</p>

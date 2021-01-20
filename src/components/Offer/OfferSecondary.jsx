@@ -14,7 +14,7 @@ const OfferSecondary = () => {
                         <h1>What do we offer?</h1>
                     </div>
 
-                    <div className="offer__container">
+                    {/* <div className="offer__container">
                         <div className="offer__text">
                             <p>At Bump up we have custom-fit programs designed for each phase of your pregnancy journey.</p>
                         </div>
@@ -27,7 +27,7 @@ const OfferSecondary = () => {
                         <div className="offer__text">
                             <p>Here's what you can choose from--</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="offer__card">
                     <Link to="/program/babyready" style={{ textDecoration: 'none' }}>
@@ -48,21 +48,21 @@ const OfferSecondary = () => {
                     <Link to="/program/mummastrong" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                         <div className="offer__card-subheading">
-                                <h2>Mumma-Strong</h2>
+                                <h2>Mumma strong</h2>
                             </div>
                             <div className="offer__card-image">
                                 <img src={MummaStrong} alt="" className="offer__svg"/>
                             </div>
 
                             <div className="offer__card-text">
-                                <p>A postnatal fitness program</p>
+                                <p>A prenatal fitness program</p>
                             </div>
                         </div>
                         </Link> 
                         <Link to="/program/everythinglabor" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                         <div className="offer__card-subheading">
-                                <h2>Everything-labor</h2>
+                                <h2>Everything labor</h2>
                             </div>
                             <div className="offer__card-image">
                                 <img src={EverythingLabor} alt="" className="offer__svg"/>
@@ -75,7 +75,7 @@ const OfferSecondary = () => {
                         <Link to="/program/bounceback" style={{ textDecoration: 'none' }}>
                         <div className="offer__card-body">
                         <div className="offer__card-subheading">
-                                <h2>Bounce-Back</h2>
+                                <h2>Bounce back</h2>
                             </div>
                             <div className="offer__card-image">
                                 <img src={BounceBack} alt="" className="offer__svg"/>

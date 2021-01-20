@@ -40,10 +40,10 @@ const NavbarMobile = ({isSecondary}) => {
 
             <div className={`${collapse ? 'navbar-mobile__collapse navbar-mobile__collapse--show': 'navbar-mobile__collapse'}`}>
                 <ul className="navbar-mobile__item">
-                    <li className={`${myUrl.endsWith("/")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/" className="navbar-mobile__link">Home</Link></li>
-                    <li className={`${myUrl.includes("program")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/program" className="navbar-mobile__link">What do we offer?</Link></li>
-                    <li className={`${myUrl.includes("whybumpup")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/whybumpup" className="navbar-mobile__link">Why Bump up?</Link></li>
-                    <li className={`${myUrl.includes("contact")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><Link to="/contact" className="navbar-mobile__link">Get in touch</Link></li>
+                    <li className={`${myUrl.endsWith("/")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><a href="/" className="navbar-mobile__link">Home</a></li>
+                    <li className={`${myUrl.includes("program")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><a href="/program" className="navbar-mobile__link">What do we offer?</a></li>
+                    <li className={`${myUrl.includes("whybumpup")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><a href="/whybumpup" className="navbar-mobile__link">Why Bump up?</a></li>
+                    <li className={`${myUrl.includes("contact")? 'navbar-mobile__list navbar-mobile__list--active': 'navbar-mobile__list'}`}><a href="/contact" className="navbar-mobile__link">Get in touch</a></li>
                 </ul>
             </div>
         </nav>

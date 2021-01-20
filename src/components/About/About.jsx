@@ -40,7 +40,7 @@ function About(){
 
                     <div className="about__text">
                         <p>
-                            At Bump Up, we understand just how important it is to focus on your well-being while navigating the changes in your body and environment. We are here to help put all those myths and doubts--valid or crazy ones--to rest.
+                            At Bump up, we understand just how important it is to focus on your well-being while navigating the changes in your body and environment. We are here to help put all those myths and doubts--valid or crazy ones--to rest.
                         </p>
                     </div>
 
