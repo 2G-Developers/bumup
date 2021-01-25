@@ -25,6 +25,18 @@
         top: 30%;
     }
 
+    &__button {
+        background: #f4e22c;
+        color: #000;
+        border: none;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        display: inline-block;
+        font-size: clamp(1rem, 1.7rem, 1.7rem);
+        margin-top: 2rem;
+        border-radius: 8px;
+    }
+
     &__header {
         color: #f4e22c;
         font-family: 'Hearth Stone', sans-serif;
