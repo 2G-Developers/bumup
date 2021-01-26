@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="row" style={{justifyContent: "center"}}>
                     <div className="enquiry__medium">
                         <div className="footer__wrapper">
-                            <span className="footer__text">© 2021 Go Sociobutterfly. All rights reserved.</span>
+                            <span className="footer__text">© 2020 Go Sociobutterfly. All rights reserved.</span>
 
                             <ul className="footer__nav">
                                 <li className="footer__item footer__item--icon">
