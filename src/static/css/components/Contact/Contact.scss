@@ -3,6 +3,7 @@
     // padding: 5rem 0;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
     background: #f5f5f5;
@@ -83,7 +84,7 @@
         background: #f5f5f5;
         padding: .4rem 0;
         font-size: .9375rem;
-        color: #cbcbcb;
+        color: #000;
         border-bottom: 1px solid #cbcbcb;
 
         &--textarea {
