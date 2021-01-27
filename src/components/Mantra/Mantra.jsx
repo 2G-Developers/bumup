@@ -1,9 +1,8 @@
 import React from 'react';
-import mantraImg from '../../static/img/mantra_image.jpg'
 
 const Mantra = () => {
     return (
-        <section className="mantra" id="mantra" style={{backgroundImage: `url(${mantraImg})`}}>
+        <section className="mantra" id="mantra" style={{backgroundImage: `url(https://res.cloudinary.com/gopal1996/image/upload/v1611744969/Bumpup/mantra_image_or55qk.webp)`}}>
             <div className="container">
                 <div className="row" style={{justifyContent: "center"}}>
                     <div className="mantra__wrapper">

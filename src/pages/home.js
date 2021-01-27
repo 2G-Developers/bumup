@@ -1,10 +1,6 @@
 import React from 'react'
 import Carousel from './../components/Carousel/Carousel'
 
-
-
-import HomeBanner from './../static/img/Home-Banner.png'
-import HomeMobile from './../static/img/Mobile-Banner.png'
 import Founder from '../components/Founder/Founder'
 import Mantra from '../components/Mantra/Mantra'
 import OfferSecondary from '../components/Offer/OfferSecondary'
@@ -16,8 +12,8 @@ function Home() {
     <div className="App">
             {/* <Navbar class1="navbar-list-active"/> */}
             <NavbarMobile />
-            <Carousel images={HomeBanner} altText="Hero" 
-                imagesMobile={HomeMobile} />
+            <Carousel images="https://res.cloudinary.com/gopal1996/image/upload/v1611745202/Bumpup/Home-Banner_uceivk.webp" altText="Hero" 
+                imagesMobile="https://res.cloudinary.com/gopal1996/image/upload/v1611745355/Bumpup/Mobile-Banner_d8o5sh.webp" />
             <OfferSecondary />
 
             <Mantra />

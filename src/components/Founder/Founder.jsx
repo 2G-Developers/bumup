@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from '../../static/img/Kavya.png'
 
 const Founder = () => {
     return (
@@ -8,7 +7,7 @@ const Founder = () => {
                 <div className="row">
                     <div className="founder__img">
                         <div className="founder__picture">
-                            <img src={photo} className="founder__tag" alt="author"/>
+                            <img src="https://res.cloudinary.com/gopal1996/image/upload/v1611745088/Bumpup/Kavya_zfgzdu.webp" className="founder__tag" alt="author"/>
                         </div>
                     </div>
                     <div className="founder__content">
