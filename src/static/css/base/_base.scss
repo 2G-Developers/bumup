@@ -52,3 +52,14 @@ body {
     background: var(--bg-color);
     font-family: 'Poppins', sans-serif;
 }
+
+#root {
+    height: 100%;
+  }
+  
+.app {
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-between;
+}

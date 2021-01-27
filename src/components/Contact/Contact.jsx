@@ -79,7 +79,7 @@ const Contact = () => {
                 </div>
             </div>
             {isMailSent ? (
-                <div class="alert alert-success" style={toastStyle} role="alert">
+                <div className="alert alert-success" style={toastStyle} role="alert">
                     We will get in touch with you shortly.
                 </div>
             ) : null}

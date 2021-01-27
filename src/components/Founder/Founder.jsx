@@ -16,7 +16,7 @@ const Founder = () => {
 cannot-do-without-coffee person and someone who loves the brighter things of life.</p>
 
                         <p className="founder__text">My pregnancy and postpartum was an absolutely happy experience and I have always
-owed that to fitness and the right lifestyle. I started Bump up with the soul purpose of
+owed that to fitness and the right lifestyle. I started Bump up with the sole purpose of
 helping more mummas enjoy their pregnancy and make it a time in their life they look back
 to with nothing but a smile!</p>
 
