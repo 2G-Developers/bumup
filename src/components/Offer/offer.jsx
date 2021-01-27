@@ -1,13 +1,42 @@
-import React ,{ useState , useEffect ,  useRef  } from 'react'
+import React ,{ Suspense, useState , useEffect ,  useRef  } from 'react'
 import {BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Carousel from '../Carousel/Carousel';
-import BabyReady from './BabyReady';
-import BounceBack from './BounceBack';
-import EverythingLabor from './EverythingLabor';
-import MummaStrong from './MummaStrong';
 
-import ProgramBanner from '../../static/img/What-do-we-offer-banner.jpg'
-import ProgramMobile from '../../static/img/Mobile-Banner-4.jpg'
+// import BabyReady from './BabyReady';
+// import BounceBack from './BounceBack';
+// import EverythingLabor from './EverythingLabor';
+// import MummaStrong from './MummaStrong';
+
+import Skeleton from 'react-loading-skeleton';
+
+const BabyReady = React.lazy(() => import(
+    /* 
+    webpackChunkName: "BabyReady-chunk",
+    webpackPrefetch: true
+   */ './BabyReady'
+    )
+);
+const BounceBack = React.lazy(() => import(
+    /* 
+    webpackChunkName: "BounceBack-chunk",
+    webpackPrefetch: true
+   */ './BounceBack'
+    )
+);
+const EverythingLabor = React.lazy(() => import(
+    /* 
+    webpackChunkName: "EverythingLabor-chunk",
+    webpackPrefetch: true
+   */ './EverythingLabor'
+    )
+);
+const MummaStrong = React.lazy(() => import(
+    /* 
+    webpackChunkName: "MummaStrong-chunk",
+    webpackPrefetch: true
+   */ './MummaStrong'
+    )
+);
 
 // const scrollToRef = (ref) => {window.scrollTo(0, ref.current.offsetTop) ;alert(ref.current.offsetTop)  }
 function ComponentDidMount(mobref,desktopref) {
@@ -96,163 +125,159 @@ function update_active(i)
     return(
         <Router>
             <>
-            <Carousel images={ProgramBanner} altText="Hero" 
-                imagesMobile={ProgramMobile} />
-            <section className="offer-page" id="offer-page">
-                <div className="container desktop">
-                    <div className="row">
-                        {/* <div className="offer-page__header offer-page__header--signature">
-                            <h1 style={{fontSize: "3.75rem"}}>What do we offer?</h1>
-                        </div> */}
+            <Suspense fallback={<Skeleton width={360} height={500} />}>
+                <Carousel images="https://res.cloudinary.com/gopal1996/image/upload/v1611749212/Bumpup/What-do-we-offer-banner_eau7db.webp" altText="Hero" 
+                    imagesMobile="https://res.cloudinary.com/gopal1996/image/upload/v1611749155/Bumpup/Mobile-Banner-4_zz59ua.webp" />
+                <section className="offer-page" id="offer-page">
+                    <div className="container desktop">
+                        <div className="row">
 
-                        <div className="offer-page__container"  >
+                            <div className="offer-page__container"  >
 
-                            <div className="offer-page__container">
-                                <div className="offer-page__text">
-                                    <p>At Bump up we have custom-fit programs designed for each phase of your pregnancy journey.</p>
-                                </div>
-                                <div className="offer-page__text">
-                                    <p>From the time you start planning for a baby to helping you make your pregnancy a fit, healthy and happy one, getting you all set for labor — and not to forget, helping you bounce back to your pre-baby self!</p>
-                                </div>
-                                <div className="offer-page__text">
-                                    <p>What more? All our programs are designed as virtual sessions giving you the flexibility to attend them from the cozy comfort of your homes!</p>
-                                </div>
-                                <div className="offer-page__text" >
-                                    <p>Here's what you can choose from--</p>
+                                <div className="offer-page__container">
+                                    <div className="offer-page__text">
+                                        <p>At Bump up we have custom-fit programs designed for each phase of your pregnancy journey.</p>
+                                    </div>
+                                    <div className="offer-page__text">
+                                        <p>From the time you start planning for a baby to helping you make your pregnancy a fit, healthy and happy one, getting you all set for labor — and not to forget, helping you bounce back to your pre-baby self!</p>
+                                    </div>
+                                    <div className="offer-page__text">
+                                        <p>What more? All our programs are designed as virtual sessions giving you the flexibility to attend them from the cozy comfort of your homes!</p>
+                                    </div>
+                                    <div className="offer-page__text" >
+                                        <p>Here's what you can choose from--</p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className="offer-page__card"  ref={desktopref}>
+                                <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)} >
+                                    <div className="offer-page__card-subheading" >
+                                        <h3>Baby-ready</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A pre-conception workshop</p>
+                                    </div>
+                                </Link>
+                                <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Mumma strong</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A prenatal fitness program</p>
+                                    </div>
+                                </Link>
+                                <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Everything labor</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A birth-preparedness workshop</p>
+                                    </div>
+                                </Link>
+                                <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Bounce back</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A postnatal fitness program</p>
+                                    </div>
+                                </Link>
+                            </div>
+
+                            <Switch>
+                                <Route exact path="/program" component={BabyReady} />
+                                <Route path="/program/babyready" component={BabyReady} />
+                                <Route path="/program/mummastrong" component={MummaStrong} />
+                                <Route path="/program/everythinglabor" component={EverythingLabor} />
+                                <Route path="/program/bounceback" component={BounceBack} />
+                            </Switch>
+
                         </div>
-
-                        <div className="offer-page__card"  ref={desktopref}>
-                            <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)} >
-                                <div className="offer-page__card-subheading" >
-                                    <h3>Baby-ready</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A pre-conception workshop</p>
-                                </div>
-                            </Link>
-                            <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Mumma strong</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A prenatal fitness program</p>
-                                </div>
-                            </Link>
-                            <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Everything labor</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A birth-preparedness workshop</p>
-                                </div>
-                            </Link>
-                            <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Bounce back</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A postnatal fitness program</p>
-                                </div>
-                            </Link>
-                        </div>
-
-                        <Switch>
-                            <Route exact path="/program" component={BabyReady} />
-                            <Route path="/program/babyready" component={BabyReady} />
-                            <Route path="/program/mummastrong" component={MummaStrong} />
-                            <Route path="/program/everythinglabor" component={EverythingLabor} />
-                            <Route path="/program/bounceback" component={BounceBack} />
-                        </Switch>
-
                     </div>
-                </div>
-                <div className="container mobile">
-                    <div className="row">
-                        {/* <div className="offer-page__header offer-page__header--signature">
-                            <h1 style={{fontSize: "3.75rem"}}>What do we offer?</h1>
-                        </div> */}
-
-                        <div className="offer-page__container">
+                    <div className="container mobile">
+                        <div className="row">
 
                             <div className="offer-page__container">
-                                <div className="offer-page__text">
-                                    <p>At Bump up we have custom-fit programs designed for each phase of your pregnancy journey.</p>
-                                </div>
-                                <div className="offer-page__text">
-                                    <p>From the time you start planning for a baby to helping you make your pregnancy a fit, healthy and happy one, getting you all set for labor — and not to forget, helping you bounce back to your pre-baby self!</p>
-                                </div>
-                                <div className="offer-page__text">
-                                    <p>What more? All our programs are designed as virtual sessions giving you the flexibility to attend them from the cozy comfort of your homes!</p>
-                                </div>
-                                <div className="offer-page__text">
-                                    <p>Here's what you can choose from--</p>
+
+                                <div className="offer-page__container">
+                                    <div className="offer-page__text">
+                                        <p>At Bump up we have custom-fit programs designed for each phase of your pregnancy journey.</p>
+                                    </div>
+                                    <div className="offer-page__text">
+                                        <p>From the time you start planning for a baby to helping you make your pregnancy a fit, healthy and happy one, getting you all set for labor — and not to forget, helping you bounce back to your pre-baby self!</p>
+                                    </div>
+                                    <div className="offer-page__text">
+                                        <p>What more? All our programs are designed as virtual sessions giving you the flexibility to attend them from the cozy comfort of your homes!</p>
+                                    </div>
+                                    <div className="offer-page__text">
+                                        <p>Here's what you can choose from--</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="offer-page__card"   >
-                            <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Baby-ready</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A pre-conception workshop</p>
-                                </div>
-                            </Link>
+                            <div className="offer-page__card"   >
+                                <Link to="/program/babyready" className={state.class1state} onClick={() =>update_active(1)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Baby-ready</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A pre-conception workshop</p>
+                                    </div>
+                                </Link>
 
-                        <div ref={mybaby}>
-                            <Switch>
-                                <Route exact path="/program/babyready" component={BabyReady}/>
-                            </Switch>
-                        </div>
-                            <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Mumma strong</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A prenatal fitness program</p>
-                                </div>
-                            </Link>
-                        <div ref={mymumma}>
-                            <Switch>
-                                <Route path="/program/mummastrong" component={MummaStrong}  />
-                            </Switch>
-                        </div>
-                            <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)} >
-                                <div className="offer-page__card-subheading">
-                                    <h3>Everything labor</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A birth-preparedness workshop</p>
-                                </div>
-                            </Link>
-                        <div ref={mylabor}>
-                            <Switch>
-                                <Route path="/program/everythinglabor" component={EverythingLabor} ref={mybaby}/>
-                            </Switch>
-                        </div>
-                            <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
-                                <div className="offer-page__card-subheading">
-                                    <h3>Bounce back</h3>
-                                </div>
-                                <div className="offer-page__card-text">
-                                    <p>A postnatal fitness program</p>
-                                </div>
-                            </Link>
-                            <div ref={mybounce}>
+                            <div ref={mybaby}>
                                 <Switch>
-                                    <Route path="/program/bounceback" component={BounceBack} />
+                                    <Route exact path="/program/babyready" component={BabyReady}/>
                                 </Switch>
                             </div>
+                                <Link to="/program/mummastrong" className={state.class2state} onClick={() =>update_active(2)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Mumma strong</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A prenatal fitness program</p>
+                                    </div>
+                                </Link>
+                            <div ref={mymumma}>
+                                <Switch>
+                                    <Route path="/program/mummastrong" component={MummaStrong}  />
+                                </Switch>
+                            </div>
+                                <Link to="/program/everythinglabor" className={state.class3state} onClick={() =>update_active(3)} >
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Everything labor</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A birth-preparedness workshop</p>
+                                    </div>
+                                </Link>
+                            <div ref={mylabor}>
+                                <Switch>
+                                    <Route path="/program/everythinglabor" component={EverythingLabor} ref={mybaby}/>
+                                </Switch>
+                            </div>
+                                <Link to="/program/bounceback" className={state.class4state} onClick={() =>update_active(4)}>
+                                    <div className="offer-page__card-subheading">
+                                        <h3>Bounce back</h3>
+                                    </div>
+                                    <div className="offer-page__card-text">
+                                        <p>A postnatal fitness program</p>
+                                    </div>
+                                </Link>
+                                <div ref={mybounce}>
+                                    <Switch>
+                                        <Route path="/program/bounceback" component={BounceBack} />
+                                    </Switch>
+                                </div>
+                            </div>
+
+
                         </div>
-
-
                     </div>
-                </div>
 
-            </section>
+                </section>
+            </Suspense>
             </>
         </Router>
     )

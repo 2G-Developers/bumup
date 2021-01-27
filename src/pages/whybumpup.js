@@ -2,10 +2,6 @@ import React from 'react'
 import Carousel from '../components/Carousel/Carousel'
 import About from '../components/About/About'
 
-
-import HomeBanner from './../static/img/Why-Bump-up-Banner.jpg'
-import HomeMobile from './../static/img/Mobile-Banner-3.jpg'
-
 // import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile'
 
@@ -14,8 +10,8 @@ function Home() {
     <div className="App">
             {/* <Navbar class4="navbar-list-active" isSecondary={false} /> */}
             <NavbarMobile isSecondary={false} />
-            <Carousel images={HomeBanner} altText="Hero" 
-                imagesMobile={HomeMobile} />
+            <Carousel images="https://res.cloudinary.com/gopal1996/image/upload/v1611749493/Bumpup/Why-Bump-up-Banner_cskrvj.webp" altText="Hero" 
+                imagesMobile="https://res.cloudinary.com/gopal1996/image/upload/v1611749408/Bumpup/Mobile-Banner-3_umdqum.webp" />
             <About />
 
     </div>

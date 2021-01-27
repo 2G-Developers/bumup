@@ -8,6 +8,7 @@ import OfferSecondary from '../components/Offer/OfferSecondary'
 import NavbarMobile from '../components/Navbar/NavbarMobile'
 const Founder = React.lazy(() => import(
   /* 
+  webpackChunkName: "founder-chunk",
   webpackPrefetch: true
  */ '../components/Founder/Founder'
   )
