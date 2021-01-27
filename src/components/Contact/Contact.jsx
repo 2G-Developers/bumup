@@ -8,6 +8,7 @@ import Dropdown from '../Dropdown/Dropdown';
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const [isMailSent, setMailSent] = useState(false);
+    const [mailMessage, setMailMessage] = useState("We will get in touch with you shortly.");
     const [dropdownValue, setdropdownValue] = useState('')
 
     const toastStyle = {
@@ -30,19 +31,39 @@ const Contact = () => {
         };
         
         fetch("/registerBump.php", requestOptions)
-        .then(response => response.text())
+        .then(response => {
+            if(!response.ok) throw new Error("Not 2xx response");
+            return response.text()
+        })
         .then(result => {
             
-            setMailSent(prevState => !prevState)
+            setMailSent(true)
+            setMailMessage("We will get in touch with you shortly.")
+            setTimeout(()=> {
+                setMailSent(false)
+            }, 5000)
 
             fetch("/register.php", requestOptions)
-            .then(response => response.text())
+            .then(response => {
+                if(!response.ok) throw new Error("Not 2xx response");
+                return response.text()
+            })
             .then(result => e.target.reset())
-            .catch(error => console.log('error', error));  
+            .catch(error => {
+                setMailMessage("Something went wrong. Try again.")
+                setMailSent(true)
+                setTimeout(()=> {
+                    setMailSent(false)
+                }, 5000)
+            });  
         })
-        .catch(error => console.log('error', error));
-    
-        setMailSent(prevState => !prevState)
+        .catch(error => {
+            setMailMessage("Something went wrong. Try again.")
+            setMailSent(true)
+            setTimeout(()=> {
+                setMailSent(false)
+            }, 5000)
+        });
     };
 
     return (
@@ -80,7 +101,7 @@ const Contact = () => {
             </div>
             {isMailSent ? (
                 <div className="alert alert-success" style={toastStyle} role="alert">
-                    We will get in touch with you shortly.
+                    {mailMessage}
                 </div>
             ) : null}
         </section>

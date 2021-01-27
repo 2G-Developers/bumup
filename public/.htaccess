@@ -1,0 +1,9 @@
+RewriteEngine On  
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+RewriteRule ^ /index.html [L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} ^on$
+RewriteRule ^(.*)$ http://bumpup.co/$1 [NC,L,R]
