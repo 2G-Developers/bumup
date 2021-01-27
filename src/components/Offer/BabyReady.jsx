@@ -1,6 +1,5 @@
 import React from 'react'
 import BabyReadyImage from '../../static/img/Baby-ready.svg';
-// import { Link } from 'react-router-dom';
 
 const BabyReady = () => {
     return (

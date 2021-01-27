@@ -1,15 +1,21 @@
 import React from 'react'
 import Offer from '../components/Offer/offer'
-// import Navbar from '../components/Navbar/Navbar';
+import {Helmet} from 'react-helmet'
 import NavbarMobile from '../components/Navbar/NavbarMobile';
-// import Carousel from '../components/Carousel/Carousel';
 
 
 
 const program = () => {
     return (
         <div className="App">
-            {/* <Navbar class2="navbar-list-active" isSecondary={true} /> */}
+            <Helmet>
+              <title>Bumpup | Program</title>
+              <meta name="title" content="Bumpup | Program" />
+
+              <meta property="og:title" content="Bumpup | Program" />
+
+              <meta property="twitter:title" content="Bumpup | Program" />
+            </Helmet>
             <NavbarMobile isSecondary={true} />
             
             <Offer />

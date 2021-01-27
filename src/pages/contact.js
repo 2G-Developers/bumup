@@ -1,12 +1,20 @@
 import React from 'react'
 import Contact from '../components/Contact/Contact'
-// import Navbar from '../components/Navbar/Navbar';
 import NavbarMobile from '../components/Navbar/NavbarMobile';
+import {Helmet} from 'react-helmet'
+
 const contactPage = () => {
     return (
         <div className="App">
             
-            {/* <Navbar class3="navbar-list-active" isSecondary={true} /> */}
+            <Helmet>
+              <title>Bumpup | Contact</title>
+              <meta name="title" content="Bumpup | Contact" />
+
+              <meta property="og:title" content="Bumpup | Contact" />
+
+              <meta property="twitter:title" content="Bumpup | Contact" />
+            </Helmet>
             <NavbarMobile isSecondary={true} />
             <Contact />
         </div>
