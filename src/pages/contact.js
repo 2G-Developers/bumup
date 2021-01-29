@@ -5,7 +5,7 @@ import {Helmet} from 'react-helmet'
 
 const contactPage = () => {
     return (
-        <div className="App">
+        <div className="App" style={{backgroundColor:"#f5f5f5",height:"100vh"}}>
             
             <Helmet>
               <title>Bumpup | Contact</title>
