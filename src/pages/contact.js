@@ -5,7 +5,7 @@ import {Helmet} from 'react-helmet'
 
 const contactPage = () => {
     return (
-        <div className="App">
+        <div className="App" style={{height: "100%"}}>
             
             <Helmet>
               <title>Bumpup | Contact</title>

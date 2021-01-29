@@ -3,11 +3,13 @@
     // padding: 5rem 0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    // justify-content: center;
     margin-bottom: 0;
     background: #f5f5f5;
-    min-height:90vh;
+    margin-top: 110px;
+    height: calc(100% - 110px);
+
     &__medium {
         padding-left: 15px;
         padding-right: 15px;
@@ -101,7 +103,7 @@
         }
 
         &::placeholder {
-            color: #cbcbcb;
+            color: #121111;
         }
     }
 
